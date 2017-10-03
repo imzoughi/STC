@@ -1,0 +1,27 @@
+// Center-align a block level element
+
+.center-block() {
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+  }
+
+.center(@xy) {
+  & when (@xy = xy) {
+    left   : 50%;
+    top    : 50%;
+    bottom : auto;
+    right  : auto;
+    .translate(-50%,-50%);
+    }
+  & when (@xy = x) {
+    left  : 50%;
+    right : auto;
+    .translate(-50%,0);
+    }
+  & when (@xy = y) {
+    top    : 50%;
+    bottom : auto;
+    .translate(0,-50%);
+    }
+  }

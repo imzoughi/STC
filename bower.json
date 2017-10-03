@@ -1,0 +1,8 @@
+{
+  "name": "GO Sport",
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "jquery": "~3.1.1",
+    "simple-line-icons": "^2.4.1"
+  }
+}

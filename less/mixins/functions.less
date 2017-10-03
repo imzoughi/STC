@@ -1,0 +1,44 @@
+// Convert HEX to RGBA
+
+.torgba(@hex, @trans) {
+	@rgba: rgba(red(@hex), green(@hex), blue(@hex), @trans);
+}
+
+// Convert RGBA
+.rgba(@color, @opacity : 1){
+	@result: rgba( red(@color), green(@color), blue(@color), @opacity );
+	}
+
+
+.backface-visibility(@visibility) {
+	-webkit-backface-visibility: @visibility;
+	-moz-backface-visibility: @visibility;
+	-ms-backface-visibility: @visibility;
+	backface-visibility: @visibility;
+	}
+
+// antialiasing mode font rendering
+
+.font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+
+
+/* Mixin */
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+	-webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+	}

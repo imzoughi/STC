@@ -1,5 +1,5 @@
 <header class="cd-main-header">
-    <a href="#0" class="cd-logo"><img src="images/stc-logo-ar.jpg" alt="Logo"></a>
+    <a href="#0" class="cd-logo"><img src="images/stc-logo-ar.jpg" class="img-responsive" alt="Logo"></a>
 
     <div class="cd-search is-hidden">
         <form action="#0">
@@ -7,15 +7,17 @@
         </form>
     </div> <!-- cd-search -->
 
-    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+    <a href="#0" class="cd-nav-trigger"><span class="sr-only">Menu</span><span></span></a>
 
     <nav class="cd-nav">
         <ul class="cd-top-nav">
             <li class="dropdown messages">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="icon-envelope-letter"></i>
-                    <div class="ball new-messages-count">12</div>
-                </a>
+
+                    <div class="dropdown-icon">
+                        <i class="icon-envelope-letter"></i> <span class="ball new-messages-count">12</span>
+                    </div>
+                    <span class="dropdown-text">My messages</span> </a>
 
                 <div class="dropdown-menu dropdown-menu-right costumised" aria-labelledby="2">
                     <ul class="dropdown-mailbox">
@@ -63,9 +65,11 @@
             </li>
             <li class="dropdown alertes">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="icon-bell"></i>
-                    <div class="ball new-messages-count">5</div>
-                </a>
+
+                    <div class="dropdown-icon">
+                        <i class="icon-bell"></i> <span class="ball new-messages-count">5</span>
+                    </div>
+                    <span class="dropdown-text">My alerts</span> </a>
 
                 <div class="dropdown-menu dropdown-menu-right costumised">
                     <ul class="dropdown-mailbox">

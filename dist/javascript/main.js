@@ -1,5 +1,5 @@
 $(function() {
-    picturefill(), bootstrapModule.init(), mainNav.init();
+    picturefill(), bootstrapModule.init(), mainNav.init(), matchHeight.init();
 });
 
 var bootstrapModule = function() {
@@ -17,7 +17,7 @@ var bootstrapModule = function() {
         function moveNavigation() {
             var mq = checkMQ();
             "mobile" == mq && 0 == topNavigation.parents(".cd-side-nav").length ? (detachElements(), 
-            topNavigation.appendTo(sidebar), searchForm.removeClass("is-hidden").prependTo(sidebar)) : ("tablet" == mq || "desktop" == mq) && topNavigation.parents(".cd-side-nav").length > 0 && (detachElements(), 
+            topNavigation.prependTo(sidebar), searchForm.removeClass("is-hidden").prependTo(sidebar)) : ("tablet" == mq || "desktop" == mq) && topNavigation.parents(".cd-side-nav").length > 0 && (detachElements(), 
             searchForm.insertAfter(header.find(".cd-logo")), topNavigation.appendTo(header.find(".cd-nav"))), 
             checkSelected(mq), resizing = !1;
         }
@@ -69,6 +69,18 @@ var bootstrapModule = function() {
                 return sidebar.find(".hover").removeClass("hover"), !0;
             },
             submenuSelector: ".has-children"
+        });
+    }
+    return {
+        init: _init
+    };
+}(), matchHeight = function() {
+    function _init() {
+        $('.section-states div[class^="col-"] .box-content').matchHeight({
+            byRow: !0,
+            property: "height",
+            target: null,
+            remove: !1
         });
     }
     return {

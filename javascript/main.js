@@ -13,6 +13,7 @@ $(function () {
     picturefill();
     bootstrapModule.init();
     mainNav.init();
+    matchHeight.init();
 });
 /* ========================================== *\
  *  MODULES
@@ -34,7 +35,6 @@ var bootstrapModule = function () {
 /* =mainNav */
 var mainNav = function () {
     function _init() {
-
         //cache DOM elements
         var mainContent = $('.cd-main-content'),
             header = $('.cd-main-header'),
@@ -46,6 +46,7 @@ var mainNav = function () {
 
         //on resize, move search and top nav position according to window width
         var resizing = false;
+
         moveNavigation();
         $(window).on('resize', function(){
             if( !resizing ) {
@@ -71,7 +72,7 @@ var mainNav = function () {
         });
 
         //click on item and show submenu
-        $('.has-children > a').on('mouseover', function(event){
+        $('.has-children > a').on('click', function(event){
             var mq = checkMQ(),
                 selectedItem = $(this);
             if( mq == 'mobile' || mq == 'tablet' ) {
@@ -97,7 +98,7 @@ var mainNav = function () {
             }
         });
 
-        $(document).on('mouseover', function(event){
+        $(document).on('click', function(event){
             if( !$(event.target).is('.has-children a') ) {
                 sidebar.find('.has-children.selected').removeClass('selected');
                 accountInfo.removeClass('selected');
@@ -129,8 +130,9 @@ var mainNav = function () {
 
             if ( mq == 'mobile' && topNavigation.parents('.cd-side-nav').length == 0 ) {
                 detachElements();
-                topNavigation.appendTo(sidebar);
+                topNavigation.prependTo(sidebar);
                 searchForm.removeClass('is-hidden').prependTo(sidebar);
+
             } else if ( ( mq == 'tablet' || mq == 'desktop') &&  topNavigation.parents('.cd-side-nav').length > 0 ) {
                 detachElements();
                 searchForm.insertAfter(header.find('.cd-logo'));
@@ -165,6 +167,24 @@ var mainNav = function () {
         }
 
 
+
+    }
+
+    return {
+        init: _init
+    };
+}();
+
+/* =matchHeight */
+var matchHeight = function () {
+    function _init() {
+
+        $('.section-states div[class^="col-"] .box-content').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
+        });
 
     }
 

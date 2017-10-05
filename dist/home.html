@@ -26,7 +26,17 @@
         <!--<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d181c">-->
         <!--<meta name="theme-color" content="#ffffff">-->
 
-        <!-- site CSS file -->
+        <!-- Leaflet CSS file -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+              integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+              crossorigin=""/>
+
+        <!-- Leaflet JavaScript : Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+                integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+                crossorigin=""></script>
+
+        <!-- Site CSS file -->
         <link rel="stylesheet" href="stylesheets/main.css">
 
 </head>
@@ -451,7 +461,7 @@
                                 <div class="box-content bg-brand box-head">
                                     <div class="box-content--inner">
                                         <div class="head">
-                                            <div class="head--title">  قوات امن المنشات</div>
+                                            <h2 class="head--title">  قوات امن المنشات</h2>
                                             <div class="head--total"><span>Total Assets</span>4065</div>
                                         </div>
                                     </div>
@@ -463,6 +473,37 @@
 
                     </div>
                     <!--/.section-states-->
+                    <!--.section-traking-map-->
+                    <div class="section-traking-map">
+
+                        <div class="row">
+                            <div class="col-lg-16 col-md-16 col-sm-16 col-xs-16">
+
+                                <!--.box-content-->
+                                <div class="box-content">
+                                    <!--.box-content--header-->
+                                    <div class="box-content--header row-flex">
+                                        <h3 class="box-content--header--title"><i class="icon-location-pin icon-before"></i><strong>Live Traking</strong> Map</h3>
+                                        <ul class="nav nav-pills box-content--header--nav">
+                                            <li class="option">
+                                                <a href="#"><i class="icon-size-fullscreen"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--.box-content--header-->
+                                    <div class="box-content--body">
+
+                                        <div id="traking-map_id"></div>
+
+                                    </div>
+                                </div>
+                                <!--/.box-content-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.section-traking-map-->
 
                 </div>
 
@@ -473,7 +514,6 @@
     </main>
     <!--.footer-->
     <footer class="footer">
-        <h2>FOOTER</h2>
     </footer>
     <!--.footer-->
 </div>

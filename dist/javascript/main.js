@@ -1,5 +1,5 @@
 $(function() {
-    picturefill(), bootstrapModule.init(), mainNav.init(), matchHeight.init();
+    picturefill(), bootstrapModule.init(), mainNav.init(), matchHeight.init(), trakingMap.init();
 });
 
 var bootstrapModule = function() {
@@ -82,6 +82,145 @@ var bootstrapModule = function() {
             target: null,
             remove: !1
         });
+    }
+    return {
+        init: _init
+    };
+}(), trakingMap = function() {
+    function _init() {
+        function normish(mean, range) {
+            var num_out = (Math.random() + Math.random() + Math.random() + Math.random() - 2) / 2 * range + mean;
+            return num_out;
+        }
+        function make_dots() {
+            dots = {
+                type: "FeatureCollection",
+                features: []
+            };
+            for (var i = 0; i < dotcount; ++i) {
+                x = normish(0, 1), y = normish(0, 1);
+                var g = {
+                    type: "Point",
+                    coordinates: [ .1 * x + centerlon, .1 * y + centerlat ]
+                }, p = {
+                    id: i,
+                    popup: "blue_dot_" + i,
+                    year: parseInt(100 * Math.sqrt(x * x + y * y) * (1 - Math.random() / 2) + 1900)
+                };
+                dots.features.push({
+                    geometry: g,
+                    type: "Feature",
+                    properties: p
+                });
+            }
+        }
+        function make_gdots() {
+            gdots = {
+                type: "FeatureCollection",
+                features: []
+            };
+            for (var i = 0; i < gdotcount; ++i) {
+                x = normish(0, 1, 1), y = normish(0, 1, 1);
+                var g = {
+                    type: "Point",
+                    coordinates: [ .05 * x + centerlon + .05, .05 * y + centerlat ]
+                }, p = {
+                    id: i,
+                    popup: "green_dot_" + i,
+                    year: parseInt(100 * Math.sqrt(x * x + y * y) * (1 - Math.random() / 2) + 1900)
+                };
+                gdots.features.push({
+                    geometry: g,
+                    type: "Feature",
+                    properties: p
+                });
+            }
+        }
+        function highlightDot(e) {
+            var layer = e.target;
+            layer.setStyle(dotStyleHighlight), L.Browser.ie || L.Browser.opera || layer.bringToFront();
+        }
+        function resetDotHighlight(e) {
+            var layer = e.target;
+            layer.setStyle(dotStyleDefault);
+        }
+        function onEachDot(feature, layer) {
+            layer.on({
+                mouseover: highlightDot,
+                mouseout: resetDotHighlight
+            }), layer.bindPopup('<table style="width:150px"><tbody><tr><td><div><b>name:</b></div></td><td><div>' + feature.properties.popup + "</div></td></tr><tr class><td><div><b>year:</b></div></td><td><div>" + feature.properties.year + "</div></td></tr></tbody></table>");
+        }
+        function highlightGdot(e) {
+            var layer = e.target;
+            layer.setStyle(gdotStyleHighlight), L.Browser.ie || L.Browser.opera || layer.bringToFront();
+        }
+        function resetGdotHighlight(e) {
+            var layer = e.target;
+            layer.setStyle(gdotStyleDefault);
+        }
+        function onEachGdot(feature, layer) {
+            layer.on({
+                mouseover: highlightGdot,
+                mouseout: resetGdotHighlight
+            }), layer.bindPopup('<table style="width:150px"><tbody><tr><td><div><b>name:</b></div></td><td><div>' + feature.properties.popup + "</div></td></tr><tr class><td><div><b>year:</b></div></td><td><div>" + feature.properties.year + "</div></td></tr></tbody></table>");
+        }
+        var centerlat = 24.64015, centerlon = 46.70357, zoomLevel = 14, map = L.map("traking-map_id").setView([ centerlat, centerlon ], zoomLevel);
+        ATTR = '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> | &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', 
+        CDB_URL = "http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", L.tileLayer(CDB_URL, {
+            attribution: ATTR
+        }).addTo(map), L.control.zoom({
+            position: "topright"
+        }).addTo(map);
+        var dotlayer, dots, gdotlayer, gdots, dotcount = 200, gdotcount = 75;
+        make_dots(), make_gdots();
+        var dotStyleDefault = {
+            radius: 5,
+            fillColor: "#703081",
+            color: "#000",
+            weight: 0,
+            opacity: 1,
+            fillOpacity: .9
+        }, dotStyleHighlight = {
+            radius: 6,
+            fillColor: "#703081",
+            color: "#FFF",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: .9
+        }, gdotStyleDefault = {
+            radius: 5,
+            fillColor: "#da3e7b",
+            color: "#FFF",
+            weight: 0,
+            opacity: 1,
+            fillOpacity: .9
+        }, gdotStyleHighlight = {
+            radius: 6,
+            fillColor: "#da3e7b",
+            color: "#FFF",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: .9
+        };
+        dotlayer = L.geoJson(dots, {
+            pointToLayer: function(feature, latlng) {
+                return L.circleMarker(latlng, dotStyleDefault);
+            },
+            onEachFeature: onEachDot
+        }).addTo(map), gdotlayer = L.geoJson(gdots, {
+            pointToLayer: function(feature, latlng) {
+                return L.circleMarker(latlng, gdotStyleDefault);
+            },
+            onEachFeature: onEachGdot
+        }).addTo(map);
+        var overlayMaps = {
+            '<i class="icon-location-pin"></i> Locate': dotlayer,
+            '<i class="icon-plane"></i> Trips': gdotlayer
+        };
+        layerbox = L.control.layers(null, overlayMaps, {
+            collapsed: !1,
+            position: "topleft"
+        }).addTo(map);
     }
     return {
         init: _init

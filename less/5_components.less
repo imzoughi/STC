@@ -9,14 +9,33 @@
 .box-content {
   background-color : @white;
   box-shadow: 0 4px 35px -15px @gray-base;
+  margin-bottom: 30px;
   &.bg-brand {
     background-color : @brand-primary;
     color : @white;
+    }
+  &--header {
+    padding: 20px @grid-gutter-width;
+    &--title {
+      line-height: 0.1;
+      margin: 0;
+      }
+    &--nav {
+      margin-left: auto;
+      > .option {
+        a {
+          padding: 5px;
+          font-size: 18px;
+          line-height: 0.1;
+          }
+        }
+      }
     }
   &--inner {
     padding: 30px;
     }
   }
+
 .box-head {
   text-align: center;
   display: table;
@@ -93,4 +112,10 @@
     left: 50%;
     .translate(-50%,-50%);
     }
+  }
+
+#traking-map_id {
+  height: 520px;
+  height: 57vh;
+  width: 100%;
   }

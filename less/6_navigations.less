@@ -24,7 +24,10 @@ Main Page Content
 
   .content-wrapper {
     background-color : @gray-light;
-    padding : @header-height-S 0 0;
+    padding          : @header-height-S 0 0;
+    position: relative;
+    z-index: 0;
+
     &--inner {
       padding : @grid-gutter-width (@grid-gutter-width /2);
       }
@@ -210,13 +213,23 @@ Header
 
   &::before {
     /* lens icon */
-    content    : '';
-    position   : absolute;
-    left       : 8px;
+    content                 : "\e090";
+    position                : absolute;
+    left                    : 8px;
     .center(y);
-    height     : 16px;
-    width      : 16px;
-    background : url("../images/cd-search.svg") no-repeat 0 0;
+    height                  : 16px;
+    width                   : 16px;
+    color                   : @brand-primary;
+    font-family             : 'simple-line-icons';
+    speak                   : none;
+    font-size               : 24px;
+    font-style              : normal;
+    font-weight             : normal;
+    font-variant            : normal;
+    text-transform          : none;
+    line-height             : 1;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
     }
 
   input {
@@ -248,8 +261,8 @@ Header
       }
 
     &::before {
-      background-position : 0 -16px;
-      left                : 1em;
+      margin : -5px 0 0;
+      left   : 0;
       }
 
     form, input {
@@ -759,7 +772,7 @@ Sidebar
     /* reset style */
     visibility  : visible;
     opacity     : 1;
-    overflow : visible;
+    overflow    : visible;
     max-height  : none;
 
     &.nav-is-visible {
@@ -786,7 +799,7 @@ Sidebar
       }
 
     > ul > li > a {
-      padding        : calc(~"2.8em + 24px") 0 1.2em;
+      padding        : calc(~"2.8em + 24px") 0 0.6em;
       text-transform : uppercase;
       &::before {
         .center(x);

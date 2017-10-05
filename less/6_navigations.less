@@ -25,6 +25,8 @@ Main Page Content
   .content-wrapper {
     background-color : @gray-light;
     padding          : @header-height-S 0 0;
+    height: 100vh;
+    overflow : auto;
     position: relative;
     z-index: 0;
 
@@ -125,7 +127,7 @@ Header
   display      : block;
   width        : 34px;
   height       : 100%;
-  margin-right : 5%;
+  margin-right : @grid-gutter-width;
   /* hide text */
   overflow     : hidden;
   white-space  : nowrap;

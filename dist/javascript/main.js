@@ -1,5 +1,5 @@
 $(function() {
-    picturefill(), bootstrapModule.init(), mainNav.init(), matchHeight.init(), trakingMap.init();
+    picturefill(), bootstrapModule.init(), mainNav.init(), matchHeight.init();
 });
 
 var bootstrapModule = function() {
@@ -80,13 +80,19 @@ var bootstrapModule = function() {
             byRow: !0,
             property: "height",
             target: null,
-            remove: !1
+            remove: !0
         });
     }
     return {
         init: _init
     };
-}(), trakingMap = function() {
+}();
+
+$(function() {
+    trakingMap.init();
+});
+
+var trakingMap = function() {
     function _init() {
         function normish(mean, range) {
             var num_out = (Math.random() + Math.random() + Math.random() + Math.random() - 2) / 2 * range + mean;

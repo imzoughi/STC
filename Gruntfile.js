@@ -81,7 +81,7 @@ module.exports = function (grunt) {
                         'javascript/plugins/owl.carousel.min.js',
                         
                     ],
-                    'dist/javascript/main.js': ['javascript/**/*.js'],
+                    'dist/javascript/main.js': ['javascript/*.js'],
                 },
             },
         },

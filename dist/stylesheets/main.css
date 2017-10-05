@@ -17382,14 +17382,19 @@ Sidebar
   background-color: transparent;
   color: #703081;
   font-family: "stc", Helvetica, Arial, sans-serif;
-  float: left;
   margin-right: 4px;
 }
-/* line 93, less\9_leaflet.less */
+@media (min-width: 992px) {
+  /* line 92, less\9_leaflet.less */
+  .leaflet-control-layers-overlays label {
+    float: left;
+  }
+}
+/* line 96, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector {
   display: none;
 }
-/* line 97, less\9_leaflet.less */
+/* line 100, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector + span {
   display: block;
   background-color: #703081;
@@ -17407,19 +17412,19 @@ Sidebar
   min-width: 100px;
   cursor: pointer;
 }
-/* line 111, less\9_leaflet.less */
+/* line 114, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector + span i {
   display: block;
   font-size: 24px;
   margin-bottom: 5px;
   text-align: center;
 }
-/* line 118, less\9_leaflet.less */
+/* line 121, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector:checked + span {
   background-color: #FFF;
   color: #703081;
 }
-/* line 125, less\9_leaflet.less */
+/* line 128, less\9_leaflet.less */
 .leaflet-popup-content-wrapper {
   padding: 5px;
   text-align: left;
@@ -17428,11 +17433,11 @@ Sidebar
   font-size: 14px;
   font-family: "stc", Helvetica, Arial, sans-serif;
 }
-/* line 134, less\9_leaflet.less */
+/* line 137, less\9_leaflet.less */
 .leaflet-container a.leaflet-popup-close-button {
   padding: 8px 20px 0 0;
 }
-/* line 139, less\9_leaflet.less */
+/* line 142, less\9_leaflet.less */
 .leaflet-container .btn-map-screen {
   position: absolute;
   bottom: 30px;
@@ -17451,12 +17456,12 @@ Sidebar
   text-decoration: none;
   display: none;
 }
-/* line 154, less\9_leaflet.less */
+/* line 157, less\9_leaflet.less */
 .leaflet-container .btn-map-screen:hover {
   background-color: #703081;
   color: #FFF;
 }
-/* line 160, less\9_leaflet.less */
+/* line 163, less\9_leaflet.less */
 .leaflet-container.fullscreen .btn-map-screen {
   display: block;
 }

@@ -220,7 +220,13 @@ var bootstrapModule = function() {
         layerbox = L.control.layers(null, overlayMaps, {
             collapsed: !1,
             position: "topleft"
-        }).addTo(map);
+        }).addTo(map), $(".btn-map-fullscreen").on("click", function(e) {
+            e.preventDefault(), $("#traking-map_id").toggleClass("fullscreen").prependTo(".content-wrapper"), 
+            $(".content-wrapper--inner").toggleClass("hidden");
+        }), $(".btn-map-screen").on("click", function(e) {
+            e.preventDefault(), $("#traking-map_id").toggleClass("fullscreen").appendTo(".section-traking-map .box-content--body"), 
+            $(".content-wrapper--inner").toggleClass("hidden");
+        });
     }
     return {
         init: _init

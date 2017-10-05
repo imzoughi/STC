@@ -510,6 +510,20 @@ var trakingMap = function () {
             return filteredDots;
         }
 
+
+        $('.btn-map-fullscreen').on('click',function (e) {
+            e.preventDefault();
+            $('#traking-map_id').toggleClass('fullscreen').prependTo('.content-wrapper');
+            $('.content-wrapper--inner').toggleClass('hidden');
+        });
+
+
+        $('.btn-map-screen').on('click',function (e) {
+            e.preventDefault();
+            $('#traking-map_id').toggleClass('fullscreen').appendTo('.section-traking-map .box-content--body');
+            $('.content-wrapper--inner').toggleClass('hidden');
+        });
+
         //////////////////////////////////////////////////////////////////////////////////////////////
         //One problem here is that filtering the data moves the filtered layer down to the bottom of
         //the layer control box, which can be annoying. Another problem is that this is a pretty slow

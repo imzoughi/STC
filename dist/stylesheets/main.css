@@ -15875,12 +15875,6 @@ address {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 117, less\5_components.less */
-#traking-map_id {
-  height: 520px;
-  height: 57vh;
-  width: 100%;
-}
 /* --------------------------------
 
 Main Page Content
@@ -17294,7 +17288,22 @@ Sidebar
   color: black;
   opacity: 0.75;
 }
-/* line 2, less\9_leaflet.less */
+/* line 1, less\9_leaflet.less */
+.map-container {
+  height: 520px;
+  height: 57vh;
+  width: 100%;
+}
+/* line 6, less\9_leaflet.less */
+.map-container.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+/* line 17, less\9_leaflet.less */
 .leaflet-bar > a {
   background-color: #FFF;
   border-bottom: 0;
@@ -17304,59 +17313,59 @@ Sidebar
   float: left;
   margin-right: 2px;
 }
-/* line 10, less\9_leaflet.less */
+/* line 25, less\9_leaflet.less */
 .leaflet-bar > a:hover {
   background-color: #703081;
   border-bottom: 0;
   color: #FFF;
 }
-/* line 18, less\9_leaflet.less */
+/* line 33, less\9_leaflet.less */
 .leaflet-touch .leaflet-control-attribution,
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
   border: 0 none;
 }
-/* line 24, less\9_leaflet.less */
+/* line 39, less\9_leaflet.less */
 .leaflet-touch .leaflet-bar a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 28, less\9_leaflet.less */
+/* line 43, less\9_leaflet.less */
 .leaflet-bar a:first-child,
 .leaflet-touch .leaflet-bar a:first-child {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 33, less\9_leaflet.less */
+/* line 48, less\9_leaflet.less */
 .leaflet-bar a:last-child,
 .leaflet-touch .leaflet-bar a:last-child {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 38, less\9_leaflet.less */
+/* line 53, less\9_leaflet.less */
 .leaflet-top .leaflet-control {
   margin-top: 30px;
 }
-/* line 42, less\9_leaflet.less */
+/* line 57, less\9_leaflet.less */
 .leaflet-bottom .leaflet-control {
   margin-bottom: 30px;
 }
-/* line 46, less\9_leaflet.less */
+/* line 61, less\9_leaflet.less */
 .leaflet-left .leaflet-control {
   margin-left: 30px;
 }
-/* line 50, less\9_leaflet.less */
+/* line 65, less\9_leaflet.less */
 .leaflet-right .leaflet-control {
   margin-right: 30px;
 }
-/* line 55, less\9_leaflet.less */
+/* line 70, less\9_leaflet.less */
 .leaflet-top.leaflet-left .leaflet-control-zoom {
   display: none;
 }
-/* line 60, less\9_leaflet.less */
+/* line 75, less\9_leaflet.less */
 .leaflet-touch .leaflet-control-layers,
 .leaflet-control-layers-expanded {
   border: 0 none;
@@ -17364,7 +17373,7 @@ Sidebar
   background-color: transparent;
   padding: 0;
 }
-/* line 69, less\9_leaflet.less */
+/* line 84, less\9_leaflet.less */
 .leaflet-control-layers-overlays label {
   background-color: transparent;
   color: #703081;
@@ -17372,11 +17381,11 @@ Sidebar
   float: left;
   margin-right: 4px;
 }
-/* line 76, less\9_leaflet.less */
+/* line 91, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector {
   display: none;
 }
-/* line 80, less\9_leaflet.less */
+/* line 95, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector + span {
   display: block;
   background-color: #703081;
@@ -17394,19 +17403,19 @@ Sidebar
   min-width: 100px;
   cursor: pointer;
 }
-/* line 94, less\9_leaflet.less */
+/* line 109, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector + span i {
   display: block;
   font-size: 24px;
   margin-bottom: 5px;
   text-align: center;
 }
-/* line 101, less\9_leaflet.less */
+/* line 116, less\9_leaflet.less */
 .leaflet-control-layers-overlays label input.leaflet-control-layers-selector:checked + span {
   background-color: #FFF;
   color: #703081;
 }
-/* line 108, less\9_leaflet.less */
+/* line 123, less\9_leaflet.less */
 .leaflet-popup-content-wrapper {
   padding: 5px;
   text-align: left;
@@ -17415,8 +17424,34 @@ Sidebar
   font-size: 14px;
   font-family: "stc", Helvetica, Arial, sans-serif;
 }
-/* line 117, less\9_leaflet.less */
+/* line 132, less\9_leaflet.less */
 .leaflet-container a.leaflet-popup-close-button {
   padding: 8px 20px 0 0;
+}
+/* line 137, less\9_leaflet.less */
+.leaflet-container .btn-map-screen {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 999;
+  background-color: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #703081;
+  font-size: 18px;
+  line-height: 0.1;
+  padding: 5px;
+  text-decoration: none;
+  display: none;
+}
+/* line 151, less\9_leaflet.less */
+.leaflet-container .btn-map-screen:hover {
+  background-color: #703081;
+  color: #FFF;
+}
+/* line 157, less\9_leaflet.less */
+.leaflet-container.fullscreen .btn-map-screen {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

@@ -51,7 +51,7 @@ input[type="search"] {
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 0 0 0;
   margin-top: 1px \9; // IE8-9
   line-height: normal;
 }
@@ -115,7 +115,7 @@ output {
   display: block;
   width: 100%;
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: @padding-base-vertical @padding-base-horizontal;
+  padding: (@padding-base-top * 2) (@padding-base-horizontal /2) @padding-base-bottom;
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @input-color;
@@ -295,6 +295,196 @@ input[type="checkbox"] {
     }
   }
 }
+
+
+
+
+.checkbox {
+  position    : relative;
+  margin      : 0;
+  font-size   : @font-size-base;
+  font-weight : normal;
+  cursor      : pointer;
+  }
+
+.widget--sidebar .checkbox {
+  font-size : 10px;
+  }
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+  display : none;
+  }
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-color : @white;
+  border-color     : @brand-primary;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23da3f7b' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  font-weight      : 900;
+  }
+
+.checkbox .checkbox-indicator {
+  content             : "";
+  width               : 15px;
+  height              : 15px;
+  background-color    : #FFF;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ccc' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  border              : 1px solid #DDD;
+  border-radius       : 0px;
+  display             : block;
+  position            : absolute;
+  left                : 0;
+  top                 : 50%;
+  margin-top          : -12px;
+  -webkit-transition  : all 0.2s ease;
+  transition          : all 0.2s ease;
+  background-repeat   : no-repeat;
+  background-position : center center;
+  background-size     : 60% 60%;
+
+  &:hover,
+  &:focus {
+    background-color : @gray-lighter;
+    }
+
+  }
+
+.checkbox.checkbox-inline {
+  padding-left : 24px;
+  }
+
+.checkbox.checkbox-inline-right {
+  padding-right : 24px;
+
+  .checkbox-indicator {
+    left  : inherit;
+    right : 0;
+    }
+  }
+
+.checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-color : #E4E7ED;
+  border-color     : #DDD;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ddd' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  }
+
+.checkbox-table {
+  display       : -webkit-box;
+  display       : -ms-flexbox;
+  display       : flex;
+  -ms-flex-wrap : wrap;
+  flex-wrap     : wrap;
+  margin-left   : 1px;
+  margin-bottom : 1px;
+  }
+
+.checkbox-table .checkbox--cell {
+  margin : 0 0 -1px -1px;
+
+  @media (max-width : @screen-xs-max) {
+    margin : 0 0 1px 1px;
+    }
+  }
+
+.checkbox--cell {
+  width    : 40px;
+  height   : 40px;
+  position : relative;
+  }
+
+.checkbox--cell input[type="checkbox"]:checked + .checkbox-indicator {
+  background-color : @brand-primary;
+  background-image : none;
+  border-color     : @gray-lighter;
+  color            : #FFF;
+  }
+
+.checkbox--cell .checkbox-indicator {
+  content            : "";
+  width              : 40px;
+  height             : 40px;
+  background-color   : #FFF;
+  border             : 1px solid @gray-lighter;
+  border-radius      : 0;
+  display            : block;
+  position           : absolute;
+  left               : 0;
+  top                : 0;
+  right              : 0;
+  bottom             : 0;
+  margin-top         : 0;
+  -webkit-transition : all 0.2s ease;
+  transition         : all 0.2s ease;
+  text-align         : center;
+  line-height        : 38px;
+  }
+
+.radio {
+  position : relative;
+  margin   : 0;
+  }
+
+.radio input[type="radio"] {
+  display : none;
+  }
+
+.radio input[type="radio"]:checked + .radio-indicator {
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23da3f7b'/%3E%3C/svg%3E");
+  border-color     : @brand-primary;
+  }
+
+.radio .radio-indicator {
+  content             : "";
+  width               : 16px;
+  height              : 16px;
+  background-color    : @white;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ccc'/%3E%3C/svg%3E");
+  border              : 1px solid #DDDDDD;
+  border-radius       : 50%;
+  display             : block;
+  position            : absolute;
+  left                : 0;
+  top                 : 0;
+  -webkit-transition  : all 0.2s ease;
+  transition          : all 0.2s ease;
+  background-repeat   : no-repeat;
+  background-position : center center;
+  background-size     : 8px 8px;
+  .box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.10));
+  }
+
+.radio.radio-inline {
+  padding-left : 24px;
+  }
+
+.radio input[type="radio"]:disabled + .radio-indicator {
+  background-color : @gray-lighter;
+  border-color     : #CCCCCC;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ccc'/%3E%3C/svg%3E");
+  }
+
+.radio--word {
+  position : relative;
+  padding  : 0 !important;
+  }
+
+.radio--word + .radio--word {
+  margin-left : 20px;
+  }
+
+.radio--word input[type="radio"]:checked + .radio-label {
+  color : #31404B;
+  }
+
+.radio--word .radio-label {
+  color       : #BFC2C4;
+  font-weight : 700;
+  }
+
+.radio--word-lg {
+  font-size   : 15px;
+  line-height : 1.2em;
+  }
 
 
 // Static form control text
@@ -520,7 +710,7 @@ input[type="checkbox"] {
     .radio,
     .checkbox {
       display: inline-block;
-      margin-top: 0;
+      margin-top: 8px;
       margin-bottom: 0;
       vertical-align: middle;
 

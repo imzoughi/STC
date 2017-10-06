@@ -190,11 +190,11 @@ var mainNav = function () {
 var matchHeight = function () {
     function _init() {
 
-        $('.section-states div[class^="col-"] .box-content').matchHeight({
+        $('.section-states .row > div[class^="col-"] > .box-content').matchHeight({
             byRow: true,
             property: 'height',
             target: null,
-            remove: true
+            remove: false
         });
 
     }

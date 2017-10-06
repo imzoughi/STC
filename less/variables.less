@@ -15,8 +15,9 @@
 @gray-lighter : lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary : #703081; // #337ab7
-@brand-primary-hover : #ffffff; // #337ab7
+@brand-primary-hover : darken(@brand-primary,13.5%); // #337ab7
 @brand-secondary: #da3f7b; // #337ab7
+@brand-secondary-hover: darken(@brand-secondary,13.5%); // #337ab7
 @brand-success : #18cc6b;
 @brand-info : #41a8f5;
 @brand-warning : #F0AD4E;
@@ -86,24 +87,32 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical : 6px;
+@padding-base-top : 6px;
+@padding-base-bottom : 6px;
 @padding-base-horizontal : 24px;
+@margin-base-vertical : 10px;
 
-@padding-large-vertical : 10px;
+@padding-large-top : 10px;
+@padding-large-bottom : 10px;
 @padding-large-horizontal : 32px;
+@margin-large-vertical : 15px;
 
-@padding-small-vertical : 5px;
+@padding-small-top : 5px;
+@padding-small-bottom : 5px;
 @padding-small-horizontal : 20px;
+@margin-small-vertical : 10px;
 
-@padding-xs-vertical : 1px;
+@padding-xs-top : 1px;
+@padding-xs-bottom : 1px;
 @padding-xs-horizontal : 5px;
+@margin-xs-vertical : 5px;
 
 @line-height-large : 1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small : 1.5;
 
-@border-radius-base : 0px;
-@border-radius-large : 0px;
-@border-radius-small : 0px;
+@border-radius-base : 4px;
+@border-radius-large : 4px;
+@border-radius-small : 4px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color : #FFF;
@@ -141,9 +150,9 @@
 
 @btn-font-weight : 200;
 
-@btn-default-color : #333;
-@btn-default-bg : #FFF;
-@btn-default-border : #CCC;
+@btn-default-color : @white;
+@btn-default-bg : @brand-secondary;
+@btn-default-border : @brand-secondary;
 
 @btn-primary-color : #FFF;
 @btn-primary-bg : @brand-primary;
@@ -482,20 +491,20 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text : #3C763D;
-@state-success-bg : #DFF0D8;
+@state-success-text : @brand-success;
+@state-success-bg : lighten(@brand-success,25%);
 @state-success-border : darken(spin(@state-success-bg, -10), 5%);
 
-@state-info-text : #31708F;
-@state-info-bg : #D9EDF7;
+@state-info-text : @brand-info;
+@state-info-bg : lighten(@brand-info,25%);;
 @state-info-border : darken(spin(@state-info-bg, -10), 7%);
 
-@state-warning-text : #8A6D3B;
-@state-warning-bg : #FCF8E3;
+@state-warning-text : @brand-warning;
+@state-warning-bg : lighten(@brand-warning,25%);
 @state-warning-border : darken(spin(@state-warning-bg, -10), 5%);
 
-@state-danger-text : #A94442;
-@state-danger-bg : #F2DEDE;
+@state-danger-text : @brand-danger;
+@state-danger-bg : lighten(@brand-danger,25%);
 @state-danger-border : darken(spin(@state-danger-bg, -10), 5%);
 
 //== Tooltips

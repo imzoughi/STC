@@ -9,7 +9,11 @@
  *  INIT
 \* ========================================== */
 $(function () {
-    trakingMap.init();
+    if($('#traking-map_id').length > 0) {
+        trakingMap.init();
+    } else {
+        return;
+    }
 });
  /* ========================================== *\
  *  MODULES

@@ -89,7 +89,7 @@ var bootstrapModule = function() {
 }();
 
 $(function() {
-    trakingMap.init();
+    $("#traking-map_id").length > 0 && trakingMap.init();
 });
 
 var trakingMap = function() {

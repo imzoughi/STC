@@ -11,6 +11,7 @@ module.exports = function (grunt) {
 
                     "dist/index.html": "index.html",
                     "dist/home.html": "home.html",
+                    "dist/page-fleet.html": "page-fleet.html",
                     "dist/components.html": "components.html",
 
                     // etc ...

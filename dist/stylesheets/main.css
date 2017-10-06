@@ -1404,7 +1404,7 @@ html {
 /* line 27, bower_components\bootstrap\less\scaffolding.less */
 body {
   font-family: "stc", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #703081;
   background-color: #FFF;
@@ -1476,8 +1476,8 @@ img {
 }
 /* line 113, bower_components\bootstrap\less\scaffolding.less */
 hr {
-  margin-top: 21px;
-  margin-bottom: 21px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1560,8 +1560,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 21px;
-  margin-bottom: 10.5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 /* line 30, bower_components\bootstrap\less\type.less */
 h1 small,
@@ -1585,8 +1585,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 /* line 41, bower_components\bootstrap\less\type.less */
 h4 small,
@@ -1606,54 +1606,54 @@ h6 .small,
 /* line 47, bower_components\bootstrap\less\type.less */
 h1,
 .h1 {
-  font-size: 39px;
+  font-size: 36px;
 }
 /* line 48, bower_components\bootstrap\less\type.less */
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 30px;
 }
 /* line 49, bower_components\bootstrap\less\type.less */
 h3,
 .h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
 /* line 50, bower_components\bootstrap\less\type.less */
 h4,
 .h4 {
-  font-size: 19px;
+  font-size: 18px;
 }
 /* line 51, bower_components\bootstrap\less\type.less */
 h5,
 .h5 {
-  font-size: 15px;
+  font-size: 14px;
 }
 /* line 52, bower_components\bootstrap\less\type.less */
 h6,
 .h6 {
-  font-size: 13px;
+  font-size: 12px;
 }
 /* line 58, bower_components\bootstrap\less\type.less */
 p {
-  margin: 0 0 10.5px;
+  margin: 0 0 15px;
 }
 /* line 62, bower_components\bootstrap\less\type.less */
 .lead {
-  margin-bottom: 21px;
-  font-size: 17px;
+  margin-bottom: 30px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   /* line 68, bower_components\bootstrap\less\type.less */
   .lead {
-    font-size: 22.5px;
+    font-size: 21px;
   }
 }
 /* line 78, bower_components\bootstrap\less\type.less */
 small,
 .small {
-  font-size: 86%;
+  font-size: 85%;
 }
 /* line 83, bower_components\bootstrap\less\type.less */
 mark,
@@ -1790,15 +1790,15 @@ a.bg-danger:focus {
 }
 /* line 147, bower_components\bootstrap\less\type.less */
 .page-header {
-  padding-bottom: 9.5px;
-  margin: 42px 0 21px;
+  padding-bottom: 14px;
+  margin: 60px 0 30px;
   border-bottom: 1px solid #eeeeee;
 }
 /* line 158, bower_components\bootstrap\less\type.less */
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10.5px;
+  margin-bottom: 15px;
 }
 /* line 162, bower_components\bootstrap\less\type.less */
 ul ul,
@@ -1828,7 +1828,7 @@ ol ol {
 /* line 189, bower_components\bootstrap\less\type.less */
 dl {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
 }
 /* line 193, bower_components\bootstrap\less\type.less */
 dt,
@@ -1872,9 +1872,9 @@ abbr[data-original-title] {
 }
 /* line 245, bower_components\bootstrap\less\type.less */
 blockquote {
-  padding: 10.5px 21px;
-  margin: 0 0 21px;
-  font-size: 18.75px;
+  padding: 15px 30px;
+  margin: 0 0 30px;
+  font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
 /* line 254, bower_components\bootstrap\less\type.less */
@@ -1927,7 +1927,7 @@ blockquote.pull-right .small:after {
 }
 /* line 298, bower_components\bootstrap\less\type.less */
 address {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   font-style: normal;
   line-height: 1.42857143;
 }
@@ -1965,9 +1965,9 @@ kbd kbd {
 /* line 41, bower_components\bootstrap\less\code.less */
 pre {
   display: block;
-  padding: 10px;
-  margin: 0 0 10.5px;
-  font-size: 14px;
+  padding: 14.5px;
+  margin: 0 0 15px;
+  font-size: 13px;
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
@@ -3147,7 +3147,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
 }
 /* line 31, bower_components\bootstrap\less\tables.less */
 .table > thead > tr > th,
@@ -3355,7 +3355,7 @@ table th[class*="col-"] {
   /* line 175, bower_components\bootstrap\less\tables.less */
   .table-responsive {
     width: 100%;
-    margin-bottom: 15.75px;
+    margin-bottom: 22.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #DDD;
@@ -3415,8 +3415,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 21px;
-  font-size: 22.5px;
+  margin-bottom: 30px;
+  font-size: 21px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -3467,7 +3467,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
 }
@@ -3475,9 +3475,9 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 35px;
+  height: 44px;
   padding: 6px 24px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
   background-color: #FFF;
@@ -3554,7 +3554,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 35px;
+    line-height: 44px;
   }
   /* line 195, bower_components\bootstrap\less\forms.less */
   input[type="date"].input-sm,
@@ -3565,7 +3565,7 @@ input[type="search"] {
   .input-group-sm input[type="time"],
   .input-group-sm input[type="datetime-local"],
   .input-group-sm input[type="month"] {
-    line-height: 31px;
+    line-height: 30px;
   }
   /* line 200, bower_components\bootstrap\less\forms.less */
   input[type="date"].input-lg,
@@ -3576,7 +3576,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 48px;
+    line-height: 46px;
   }
 }
 /* line 213, bower_components\bootstrap\less\forms.less */
@@ -3594,7 +3594,7 @@ input[type="search"] {
 /* line 229, bower_components\bootstrap\less\forms.less */
 .radio label,
 .checkbox label {
-  min-height: 21px;
+  min-height: 30px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -3659,7 +3659,7 @@ fieldset[disabled] .checkbox label {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 36px;
+  min-height: 44px;
 }
 /* line 313, bower_components\bootstrap\less\forms.less */
 .form-control-static.input-lg,
@@ -3669,16 +3669,16 @@ fieldset[disabled] .checkbox label {
 }
 /* line 329, bower_components\bootstrap\less\forms.less */
 .input-sm {
-  height: 31px;
+  height: 30px;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
 /* line 76, bower_components\bootstrap\less\mixins\forms.less */
 select.input-sm {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-sm,
@@ -3687,16 +3687,16 @@ select[multiple].input-sm {
 }
 /* line 333, bower_components\bootstrap\less\forms.less */
 .form-group-sm .form-control {
-  height: 31px;
+  height: 30px;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
 /* line 340, bower_components\bootstrap\less\forms.less */
 .form-group-sm select.form-control {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 344, bower_components\bootstrap\less\forms.less */
 .form-group-sm textarea.form-control,
@@ -3705,24 +3705,24 @@ select[multiple].input-sm {
 }
 /* line 348, bower_components\bootstrap\less\forms.less */
 .form-group-sm .form-control-static {
-  height: 31px;
-  min-height: 34px;
+  height: 30px;
+  min-height: 42px;
   padding: 6px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
 }
 /* line 357, bower_components\bootstrap\less\forms.less */
 .input-lg {
-  height: 48px;
+  height: 46px;
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
 /* line 76, bower_components\bootstrap\less\mixins\forms.less */
 select.input-lg {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-lg,
@@ -3731,16 +3731,16 @@ select[multiple].input-lg {
 }
 /* line 361, bower_components\bootstrap\less\forms.less */
 .form-group-lg .form-control {
-  height: 48px;
+  height: 46px;
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
 /* line 368, bower_components\bootstrap\less\forms.less */
 .form-group-lg select.form-control {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 372, bower_components\bootstrap\less\forms.less */
 .form-group-lg textarea.form-control,
@@ -3749,10 +3749,10 @@ select[multiple].input-lg {
 }
 /* line 376, bower_components\bootstrap\less\forms.less */
 .form-group-lg .form-control-static {
-  height: 48px;
-  min-height: 40px;
+  height: 46px;
+  min-height: 48px;
   padding: 11px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
 }
 /* line 390, bower_components\bootstrap\less\forms.less */
@@ -3761,7 +3761,7 @@ select[multiple].input-lg {
 }
 /* line 395, bower_components\bootstrap\less\forms.less */
 .has-feedback .form-control {
-  padding-right: 43.75px;
+  padding-right: 55px;
 }
 /* line 400, bower_components\bootstrap\less\forms.less */
 .form-control-feedback {
@@ -3770,9 +3770,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
   text-align: center;
   pointer-events: none;
 }
@@ -3780,17 +3780,17 @@ select[multiple].input-lg {
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 419, bower_components\bootstrap\less\forms.less */
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 8, bower_components\bootstrap\less\mixins\forms.less */
 .has-success .help-block,
@@ -3899,7 +3899,7 @@ select[multiple].input-lg {
 }
 /* line 441, bower_components\bootstrap\less\forms.less */
 .has-feedback label ~ .form-control-feedback {
-  top: 26px;
+  top: 35px;
 }
 /* line 444, bower_components\bootstrap\less\forms.less */
 .has-feedback label.sr-only ~ .form-control-feedback {
@@ -3985,7 +3985,7 @@ select[multiple].input-lg {
 /* line 565, bower_components\bootstrap\less\forms.less */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 28px;
+  min-height: 37px;
 }
 /* line 571, bower_components\bootstrap\less\forms.less */
 .form-horizontal .form-group {
@@ -4008,14 +4008,14 @@ select[multiple].input-lg {
   /* line 599, bower_components\bootstrap\less\forms.less */
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
   /* line 607, bower_components\bootstrap\less\forms.less */
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 /* line 9, bower_components\bootstrap\less\buttons.less */
@@ -4031,7 +4031,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 24px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -4512,7 +4512,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-lg > .btn,
 .btn-group-lg > .btn {
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
@@ -4521,7 +4521,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-sm > .btn,
 .btn-group-sm > .btn {
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
@@ -4530,7 +4530,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-xs > .btn,
 .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
@@ -4621,7 +4621,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 15px;
+  font-size: 14px;
   text-align: left;
   background-color: #FFF;
   border: 1px solid #CCC;
@@ -4639,7 +4639,7 @@ tbody.collapse.in {
 /* line 60, bower_components\bootstrap\less\dropdowns.less */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 14px 0;
   overflow: hidden;
   background-color: #E5E5E5;
 }
@@ -4706,7 +4706,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.42857143;
   color: #d6d6d6;
   white-space: nowrap;
@@ -4988,9 +4988,9 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 48px;
+  height: 46px;
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
@@ -4998,8 +4998,8 @@ tbody.collapse.in {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-lg > .form-control,
@@ -5014,8 +5014,8 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-lg > .form-control,
@@ -5030,9 +5030,9 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 31px;
+  height: 30px;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
@@ -5040,8 +5040,8 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-sm > .form-control,
@@ -5056,8 +5056,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-sm > .form-control,
@@ -5090,7 +5090,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 77, bower_components\bootstrap\less\input-groups.less */
 .input-group-addon {
   padding: 6px 24px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -5102,13 +5102,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 89, bower_components\bootstrap\less\input-groups.less */
 .input-group-addon.input-sm {
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 4px;
 }
 /* line 94, bower_components\bootstrap\less\input-groups.less */
 .input-group-addon.input-lg {
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   border-radius: 4px;
 }
 /* line 101, bower_components\bootstrap\less\input-groups.less */
@@ -5222,7 +5222,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 59, bower_components\bootstrap\less\navs.less */
 .nav .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 14px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -5466,7 +5466,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -5590,9 +5590,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 163, bower_components\bootstrap\less\navbar.less */
 .navbar-brand {
   float: left;
-  padding: 14.5px 15px;
-  font-size: 19px;
-  line-height: 21px;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 30px;
   height: 50px;
 }
 /* line 170, bower_components\bootstrap\less\navbar.less */
@@ -5647,13 +5647,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 232, bower_components\bootstrap\less\navbar.less */
 .navbar-nav {
-  margin: 7.25px -15px;
+  margin: 5px -15px;
 }
 /* line 235, bower_components\bootstrap\less\navbar.less */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 21px;
+  line-height: 30px;
 }
 @media (max-width: 767px) {
   /* line 243, bower_components\bootstrap\less\navbar.less */
@@ -5673,7 +5673,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   /* line 255, bower_components\bootstrap\less\navbar.less */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 21px;
+    line-height: 30px;
   }
   /* line 257, bower_components\bootstrap\less\navbar.less */
   .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -5693,8 +5693,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   /* line 272, bower_components\bootstrap\less\navbar.less */
   .navbar-nav > li > a {
-    padding-top: 14.5px;
-    padding-bottom: 14.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 /* line 286, bower_components\bootstrap\less\navbar.less */
@@ -5706,8 +5706,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 @media (min-width: 768px) {
   /* line 479, bower_components\bootstrap\less\forms.less */
@@ -5870,13 +5870,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 343, bower_components\bootstrap\less\navbar.less */
 .navbar-btn {
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 /* line 346, bower_components\bootstrap\less\navbar.less */
 .navbar-btn.btn-sm {
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* line 349, bower_components\bootstrap\less\navbar.less */
 .navbar-btn.btn-xs {
@@ -5885,8 +5885,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 359, bower_components\bootstrap\less\navbar.less */
 .navbar-text {
-  margin-top: 14.5px;
-  margin-bottom: 14.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   /* line 362, bower_components\bootstrap\less\navbar.less */
@@ -6158,7 +6158,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* line 6, bower_components\bootstrap\less\breadcrumbs.less */
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   list-style: none;
   background-color: #F5F5F5;
   border-radius: 4px;
@@ -6181,7 +6181,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 21px 0;
+  margin: 30px 0;
   border-radius: 4px;
 }
 /* line 10, bower_components\bootstrap\less\pagination.less */
@@ -6253,7 +6253,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
 }
 /* line 12, bower_components\bootstrap\less\mixins\pagination.less */
@@ -6272,7 +6272,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
 }
 /* line 12, bower_components\bootstrap\less\mixins\pagination.less */
@@ -6290,7 +6290,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* line 6, bower_components\bootstrap\less\pager.less */
 .pager {
   padding-left: 0;
-  margin: 21px 0;
+  margin: 30px 0;
   list-style: none;
   text-align: center;
 }
@@ -6420,7 +6420,7 @@ a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   color: #FFF;
   line-height: 1;
@@ -6486,7 +6486,7 @@ a.badge:focus {
 /* line 18, bower_components\bootstrap\less\jumbotron.less */
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 200;
 }
 /* line 24, bower_components\bootstrap\less\jumbotron.less */
@@ -6519,14 +6519,14 @@ a.badge:focus {
   /* line 49, bower_components\bootstrap\less\jumbotron.less */
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 68px;
+    font-size: 63px;
   }
 }
 /* line 7, bower_components\bootstrap\less\thumbnails.less */
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   line-height: 1.42857143;
   background-color: #FFF;
   border: 1px solid #DDD;
@@ -6555,7 +6555,7 @@ a.thumbnail.active {
 /* line 9, bower_components\bootstrap\less\alerts.less */
 .alert {
   padding: 15px;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -6669,8 +6669,8 @@ a.thumbnail.active {
 /* line 26, bower_components\bootstrap\less\progress-bars.less */
 .progress {
   overflow: hidden;
-  height: 21px;
-  margin-bottom: 21px;
+  height: 30px;
+  margin-bottom: 30px;
   background-color: #F5F5F5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -6681,8 +6681,8 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 13px;
-  line-height: 21px;
+  font-size: 12px;
+  line-height: 30px;
   color: #FFF;
   text-align: center;
   background-color: #703081;
@@ -7052,7 +7052,7 @@ button.list-group-item-danger.active:focus {
 }
 /* line 7, bower_components\bootstrap\less\panels.less */
 .panel {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   background-color: #FFF;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -7078,7 +7078,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 17px;
+  font-size: 16px;
   color: inherit;
 }
 /* line 39, bower_components\bootstrap\less\panels.less */
@@ -7296,7 +7296,7 @@ button.list-group-item-danger.active:focus {
 }
 /* line 222, bower_components\bootstrap\less\panels.less */
 .panel-group {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
 }
 /* line 226, bower_components\bootstrap\less\panels.less */
 .panel-group .panel {
@@ -7521,7 +7521,7 @@ button.list-group-item-danger.active:focus {
 /* line 6, bower_components\bootstrap\less\close.less */
 .close {
   float: right;
-  font-size: 22.5px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -7712,7 +7712,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -7846,7 +7846,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #FFF;
   background-clip: padding-box;
   border: 1px solid #CCC;
@@ -7875,7 +7875,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 3px 3px 0 0;
@@ -13192,7 +13192,7 @@ html {
 /* line 27, less\scaffolding.less */
 body {
   font-family: "stc", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #703081;
   background-color: #FFF;
@@ -13264,8 +13264,8 @@ img {
 }
 /* line 113, less\scaffolding.less */
 hr {
-  margin-top: 21px;
-  margin-bottom: 21px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -13339,7 +13339,7 @@ hr {
 /* line 59, less\navs.less */
 .nav .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 14px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -13726,22 +13726,26 @@ hr {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  font-size: 18px;
   font-weight: bold;
+  padding: 15px 20px 7px;
   margin: 0;
+  min-width: 100px;
 }
-/* line 382, less\navs.less */
-.nav-tabs.style-3 > li > a:hover {
+/* line 385, less\navs.less */
+.nav-tabs.style-3 > li > a:hover,
+.nav-tabs.style-3 > li > a:focus {
   color: #FFF;
   background-color: #461e51 !important;
   border-color: transparent;
   border-bottom-color: #461e51 !important;
 }
-/* line 388, less\navs.less */
+/* line 392, less\navs.less */
 .nav-tabs.style-3 > li > a:focus {
   border-color: transparent;
   background-color: transparent;
 }
-/* line 395, less\navs.less */
+/* line 399, less\navs.less */
 .nav-tabs.style-3 > li.active > a,
 .nav-tabs.style-3 > li.active > a:hover,
 .nav-tabs.style-3 > li.active > a:focus {
@@ -13751,35 +13755,40 @@ hr {
   border-color: #FFF !important;
   border-bottom-color: transparent;
 }
-/* line 407, less\navs.less */
+/* line 411, less\navs.less */
+.nav-tabs.style-3 + .tab-content {
+  -webkit-box-shadow: 0 4px 35px -15px #000;
+  box-shadow: 0 4px 35px -15px #000;
+}
+/* line 414, less\navs.less */
 .nav-tabs.style-3 + .tab-content > .tab-pane {
-  padding: 15px;
+  padding: 30px;
   border: 1px solid #FFF;
   border-top: none;
   background-color: #FFF;
 }
-/* line 413, less\navs.less */
+/* line 420, less\navs.less */
 .nav-tabs.style-4 {
   margin-bottom: 15px;
   border-bottom: 1px solid #333333;
 }
-/* line 418, less\navs.less */
+/* line 425, less\navs.less */
 .nav-tabs.style-4 > li > a {
   color: #d6d6d6;
 }
-/* line 420, less\navs.less */
+/* line 427, less\navs.less */
 .nav-tabs.style-4 > li > a:hover {
   color: #FFF;
   background-color: #333333 !important;
   border-color: #333333;
   border-bottom-color: #333333 !important;
 }
-/* line 426, less\navs.less */
+/* line 433, less\navs.less */
 .nav-tabs.style-4 > li > a:focus {
   border-color: #333333;
   background-color: #333333;
 }
-/* line 433, less\navs.less */
+/* line 440, less\navs.less */
 .nav-tabs.style-4 > li.active > a,
 .nav-tabs.style-4 > li.active > a:hover,
 .nav-tabs.style-4 > li.active > a:focus {
@@ -13791,7 +13800,7 @@ hr {
 }
 /* Small devices (tablets, smartphones) */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 447, less\navs.less */
+  /* line 454, less\navs.less */
   .nav-tabs > li > a {
     padding: 12px 10px;
     font-size: 11px;
@@ -13800,16 +13809,16 @@ hr {
 }
 /* Extra small devices (phones, less than 480px) */
 @media (max-width: 480px) {
-  /* line 456, less\navs.less */
+  /* line 463, less\navs.less */
   .nav-tabs {
     background-color: #eaeaea;
     border-bottom: none!important;
   }
-  /* line 460, less\navs.less */
+  /* line 467, less\navs.less */
   .nav-tabs > li {
     float: none;
   }
-  /* line 463, less\navs.less */
+  /* line 470, less\navs.less */
   .nav-tabs > li a {
     color: #FFF;
     margin-right: 0;
@@ -13817,7 +13826,7 @@ hr {
     -moz-border-radius: 0px!important;
     border-radius: 0px!important;
   }
-  /* line 470, less\navs.less */
+  /* line 477, less\navs.less */
   .nav-tabs.style-3 > li.active > a,
   .nav-tabs.style-3 > li.active > a:hover,
   .nav-tabs.style-3 > li.active > a:focus,
@@ -13825,58 +13834,58 @@ hr {
   .nav-tabs.style-3 > li > a:focus {
     border-bottom: 1px solid #999999!important;
   }
-  /* line 477, less\navs.less */
+  /* line 484, less\navs.less */
   .nav-tabs.style-3 + .tab-content > .tab-pane {
     border-top: 1px solid #999999;
   }
-  /* line 480, less\navs.less */
+  /* line 487, less\navs.less */
   .nav-tabs > li a:after,
   .nav-tabs > li a:before {
     border-color: transparent transparent transparent transparent!important;
   }
 }
 /* vertical tabs */
-/* line 487, less\navs.less */
+/* line 494, less\navs.less */
 .vertical {
   margin: 20px 0;
 }
-/* line 490, less\navs.less */
+/* line 497, less\navs.less */
 .vertical .nav-tabs,
 .vertical .tab-content {
   display: table-cell;
   margin: 0;
   vertical-align: top;
 }
-/* line 496, less\navs.less */
+/* line 503, less\navs.less */
 .vertical .nav-tabs {
   border-bottom-color: transparent;
-  background-color: #999999;
+  background-color: transparent;
 }
-/* line 500, less\navs.less */
+/* line 507, less\navs.less */
 .vertical .nav-tabs > li {
   float: none;
 }
-/* line 503, less\navs.less */
+/* line 510, less\navs.less */
 .vertical .nav-tabs > li a {
   margin: 0;
-  padding: 10px 20px;
+  padding: 16px 20px 8px;
   white-space: nowrap;
   color: #FFF;
-  border-bottom: 1px solid #919191;
+  border-bottom: 1px solid #703081;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 511, less\navs.less */
+/* line 518, less\navs.less */
 .vertical .nav-tabs > li > a:hover,
 .vertical .nav-tabs > li > a:focus {
   background-color: #fafafa;
   border-right-color: transparent;
   border-bottom: 1px solid #f1f1f1;
-  color: #555555;
+  color: #FFF;
   z-index: 2;
 }
-/* line 519, less\navs.less */
+/* line 526, less\navs.less */
 .vertical .nav-tabs > li.active > a,
 .vertical .nav-tabs > li.active > a:hover,
 .vertical .nav-tabs > li.active > a:focus {
@@ -13886,41 +13895,42 @@ hr {
   color: #555555;
   z-index: 2;
 }
-/* line 528, less\navs.less */
+/* line 535, less\navs.less */
 .vertical.left .nav-tabs > li > a:hover,
 .vertical.left .nav-tabs > li > a:focus {
   border-left-color: transparent;
   border-right-color: #f1f1f1;
 }
-/* line 533, less\navs.less */
+/* line 540, less\navs.less */
 .vertical.left .nav-tabs > li.active > a,
 .vertical.left .nav-tabs > li.active > a:hover,
 .vertical.left .nav-tabs > li.active > a:focus {
   border-right-color: #f1f1f1;
   border-left-color: transparent;
 }
-/* line 539, less\navs.less */
+/* line 546, less\navs.less */
 .vertical .tab-content {
-  border: 1px solid #f1f1f1;
-  border-left: 1px solid #fafafa;
-  background-color: #fafafa;
+  border: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  background-color: transparent;
   left: -1px;
   z-index: 1;
-  padding: 20px 30px;
+  padding: 0;
+  width: 100%;
 }
-/* line 547, less\navs.less */
+/* line 555, less\navs.less */
 .left.vertical .tab-content {
   border-left-color: #f1f1f1;
   border-right-color: transparent;
 }
 /* Small devices (tablets, phones less than 767px) */
 @media (max-width: 767px) {
-  /* line 553, less\navs.less */
+  /* line 561, less\navs.less */
   .vertical .nav-tabs,
   .vertical .tab-content {
     display: block;
   }
-  /* line 557, less\navs.less */
+  /* line 565, less\navs.less */
   .vertical .nav-tabs > li a {
     font-size: 15px;
   }
@@ -13937,8 +13947,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 21px;
-  font-size: 22.5px;
+  margin-bottom: 30px;
+  font-size: 21px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -13989,7 +13999,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
 }
@@ -13997,9 +14007,9 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 35px;
+  height: 44px;
   padding: 12px 12px 6px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
   background-color: #FFF;
@@ -14076,7 +14086,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 35px;
+    line-height: 44px;
   }
   /* line 195, less\forms.less */
   input[type="date"].input-sm,
@@ -14087,7 +14097,7 @@ input[type="search"] {
   .input-group-sm input[type="time"],
   .input-group-sm input[type="datetime-local"],
   .input-group-sm input[type="month"] {
-    line-height: 31px;
+    line-height: 30px;
   }
   /* line 200, less\forms.less */
   input[type="date"].input-lg,
@@ -14098,7 +14108,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 48px;
+    line-height: 46px;
   }
 }
 /* line 213, less\forms.less */
@@ -14116,7 +14126,7 @@ input[type="search"] {
 /* line 229, less\forms.less */
 .radio label,
 .checkbox label {
-  min-height: 21px;
+  min-height: 30px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -14180,7 +14190,7 @@ fieldset[disabled] .checkbox label {
 .checkbox {
   position: relative;
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   cursor: pointer;
 }
@@ -14370,7 +14380,7 @@ fieldset[disabled] .checkbox label {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 36px;
+  min-height: 44px;
 }
 /* line 503, less\forms.less */
 .form-control-static.input-lg,
@@ -14380,16 +14390,16 @@ fieldset[disabled] .checkbox label {
 }
 /* line 519, less\forms.less */
 .input-sm {
-  height: 31px;
+  height: 30px;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
 /* line 76, bower_components\bootstrap\less\mixins\forms.less */
 select.input-sm {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-sm,
@@ -14398,16 +14408,16 @@ select[multiple].input-sm {
 }
 /* line 523, less\forms.less */
 .form-group-sm .form-control {
-  height: 31px;
+  height: 30px;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
 /* line 530, less\forms.less */
 .form-group-sm select.form-control {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 534, less\forms.less */
 .form-group-sm textarea.form-control,
@@ -14416,24 +14426,24 @@ select[multiple].input-sm {
 }
 /* line 538, less\forms.less */
 .form-group-sm .form-control-static {
-  height: 31px;
-  min-height: 34px;
+  height: 30px;
+  min-height: 42px;
   padding: 6px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
 }
 /* line 547, less\forms.less */
 .input-lg {
-  height: 48px;
+  height: 46px;
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
 /* line 76, bower_components\bootstrap\less\mixins\forms.less */
 select.input-lg {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-lg,
@@ -14442,16 +14452,16 @@ select[multiple].input-lg {
 }
 /* line 551, less\forms.less */
 .form-group-lg .form-control {
-  height: 48px;
+  height: 46px;
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
 /* line 558, less\forms.less */
 .form-group-lg select.form-control {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 562, less\forms.less */
 .form-group-lg textarea.form-control,
@@ -14460,10 +14470,10 @@ select[multiple].input-lg {
 }
 /* line 566, less\forms.less */
 .form-group-lg .form-control-static {
-  height: 48px;
-  min-height: 40px;
+  height: 46px;
+  min-height: 48px;
   padding: 11px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
 }
 /* line 580, less\forms.less */
@@ -14472,7 +14482,7 @@ select[multiple].input-lg {
 }
 /* line 585, less\forms.less */
 .has-feedback .form-control {
-  padding-right: 43.75px;
+  padding-right: 55px;
 }
 /* line 590, less\forms.less */
 .form-control-feedback {
@@ -14481,9 +14491,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
   text-align: center;
   pointer-events: none;
 }
@@ -14491,17 +14501,17 @@ select[multiple].input-lg {
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 609, less\forms.less */
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 8, bower_components\bootstrap\less\mixins\forms.less */
 .has-success .help-block,
@@ -14610,7 +14620,7 @@ select[multiple].input-lg {
 }
 /* line 631, less\forms.less */
 .has-feedback label ~ .form-control-feedback {
-  top: 26px;
+  top: 35px;
 }
 /* line 634, less\forms.less */
 .has-feedback label.sr-only ~ .form-control-feedback {
@@ -14696,7 +14706,7 @@ select[multiple].input-lg {
 /* line 755, less\forms.less */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 28px;
+  min-height: 37px;
 }
 /* line 761, less\forms.less */
 .form-horizontal .form-group {
@@ -14719,14 +14729,14 @@ select[multiple].input-lg {
   /* line 789, less\forms.less */
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
   /* line 797, less\forms.less */
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 /* line 809, less\forms.less */
@@ -14839,7 +14849,7 @@ textarea.form-material .form-control {
 /* line 875, less\forms.less */
 .form-material .radio,
 .form-material .checkbox {
-  min-height: 28px;
+  min-height: 37px;
 }
 /* line 881, less\forms.less */
 .form-material .form-group {
@@ -14871,14 +14881,14 @@ textarea.form-material .form-control {
   /* line 916, less\forms.less */
   .form-material .form-group-lg .control-label {
     padding-top: 11px;
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
   /* line 924, less\forms.less */
   .form-material .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 /* line 7, less\input-groups.less */
@@ -14909,9 +14919,9 @@ textarea.form-material .form-control {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 48px;
+  height: 46px;
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
 }
@@ -14919,8 +14929,8 @@ textarea.form-material .form-control {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-lg > .form-control,
@@ -14935,8 +14945,8 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 48px;
-  line-height: 48px;
+  height: 46px;
+  line-height: 46px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-lg > .form-control,
@@ -14951,9 +14961,9 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 31px;
+  height: 30px;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
 }
@@ -14961,8 +14971,8 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-sm > .form-control,
@@ -14977,8 +14987,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 /* line 81, bower_components\bootstrap\less\mixins\forms.less */
 textarea.input-group-sm > .form-control,
@@ -15011,7 +15021,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 77, less\input-groups.less */
 .input-group-addon {
   padding: 12px 12px 6px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -15023,13 +15033,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 89, less\input-groups.less */
 .input-group-addon.input-sm {
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 4px;
 }
 /* line 94, less\input-groups.less */
 .input-group-addon.input-lg {
   padding: 10px 32px;
-  font-size: 19px;
+  font-size: 18px;
   border-radius: 4px;
 }
 /* line 101, less\input-groups.less */
@@ -15118,7 +15128,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -15243,7 +15253,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 12px 24px 6px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -15685,7 +15695,7 @@ fieldset[disabled] .btn-danger.focus {
 /* line 94, less\buttons.less */
 .btn-link {
   color: #703081;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   border-radius: 0;
 }
@@ -15726,7 +15736,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-lg > .btn,
 .btn-group-lg > .btn {
   padding: 20px 32px 10px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.3333333;
   border-radius: 4px;
   margin-bottom: 15px;
@@ -15736,7 +15746,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-sm > .btn,
 .btn-group-sm > .btn {
   padding: 10px 20px 5px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -15746,22 +15756,22 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-xs > .btn,
 .btn-group-xs > .btn {
   padding: 2px 5px 1px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
   margin-bottom: 5px;
 }
 /* line 146, less\buttons.less */
 .btn-xs-link {
-  font-size: 13px;
+  font-size: 12px;
 }
 /* line 150, less\buttons.less */
 .btn-sm-link {
-  font-size: 15px;
+  font-size: 14px;
 }
 /* line 154, less\buttons.less */
 .btn-lg-link {
-  font-size: 19px;
+  font-size: 18px;
 }
 /* line 164, less\buttons.less */
 .btn-block {
@@ -16214,7 +16224,7 @@ input[type="button"].btn-block {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 15px;
+  font-size: 14px;
   text-align: left;
   background-color: #FFF;
   border: 1px solid #CCC;
@@ -16246,7 +16256,7 @@ input[type="button"].btn-block {
 /* line 71, less\dropdowns.less */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 14px 0;
   overflow: hidden;
   background-color: #E5E5E5;
 }
@@ -16313,7 +16323,7 @@ input[type="button"].btn-block {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.42857143;
   color: #d6d6d6;
   white-space: nowrap;
@@ -16891,8 +16901,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 21px;
-  margin-bottom: 10.5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 /* line 30, less\1_type.less */
 h1 small,
@@ -16910,16 +16920,25 @@ h3 .small,
   font-size: 65%;
 }
 /* line 35, less\1_type.less */
+h1:only-of-type,
+.h1:only-of-type,
+h2:only-of-type,
+.h2:only-of-type,
+h3:only-of-type,
+.h3:only-of-type {
+  margin-top: 0;
+}
+/* line 40, less\1_type.less */
 h4,
 .h4,
 h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-/* line 41, less\1_type.less */
+/* line 46, less\1_type.less */
 h4 small,
 .h4 small,
 h5 small,
@@ -16934,101 +16953,101 @@ h6 .small,
 .h6 .small {
   font-size: 75%;
 }
-/* line 47, less\1_type.less */
+/* line 52, less\1_type.less */
 h1,
 .h1 {
-  font-size: 39px;
+  font-size: 36px;
 }
-/* line 48, less\1_type.less */
+/* line 53, less\1_type.less */
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 30px;
 }
-/* line 49, less\1_type.less */
+/* line 54, less\1_type.less */
 h3,
 .h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
-/* line 50, less\1_type.less */
+/* line 55, less\1_type.less */
 h4,
 .h4 {
-  font-size: 19px;
+  font-size: 18px;
 }
-/* line 51, less\1_type.less */
+/* line 56, less\1_type.less */
 h5,
 .h5 {
-  font-size: 15px;
+  font-size: 14px;
 }
-/* line 52, less\1_type.less */
+/* line 57, less\1_type.less */
 h6,
 .h6 {
-  font-size: 13px;
+  font-size: 12px;
 }
-/* line 58, less\1_type.less */
+/* line 63, less\1_type.less */
 p {
-  margin: 0 0 10.5px;
+  margin: 0 0 15px;
 }
-/* line 62, less\1_type.less */
+/* line 67, less\1_type.less */
 .lead {
-  margin-bottom: 21px;
-  font-size: 17px;
+  margin-bottom: 30px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
-  /* line 68, less\1_type.less */
+  /* line 73, less\1_type.less */
   .lead {
-    font-size: 22.5px;
+    font-size: 21px;
   }
 }
-/* line 78, less\1_type.less */
+/* line 83, less\1_type.less */
 small,
 .small {
-  font-size: 86%;
+  font-size: 85%;
 }
-/* line 83, less\1_type.less */
+/* line 88, less\1_type.less */
 mark,
 .mark {
   background-color: #fae3c4;
   padding: .2em;
 }
-/* line 90, less\1_type.less */
+/* line 95, less\1_type.less */
 .text-left {
   text-align: left;
 }
-/* line 91, less\1_type.less */
+/* line 96, less\1_type.less */
 .text-right {
   text-align: right;
 }
-/* line 92, less\1_type.less */
+/* line 97, less\1_type.less */
 .text-center {
   text-align: center;
 }
-/* line 93, less\1_type.less */
+/* line 98, less\1_type.less */
 .text-justify {
   text-align: justify;
 }
-/* line 94, less\1_type.less */
+/* line 99, less\1_type.less */
 .text-nowrap {
   white-space: nowrap;
 }
-/* line 97, less\1_type.less */
+/* line 102, less\1_type.less */
 .text-lowercase {
   text-transform: lowercase;
 }
-/* line 98, less\1_type.less */
+/* line 103, less\1_type.less */
 .text-uppercase {
   text-transform: uppercase;
 }
-/* line 99, less\1_type.less */
+/* line 104, less\1_type.less */
 .text-capitalize {
   text-transform: capitalize;
 }
-/* line 102, less\1_type.less */
+/* line 107, less\1_type.less */
 .text-muted {
   color: #d6d6d6;
 }
-/* line 105, less\1_type.less */
+/* line 110, less\1_type.less */
 .text-primary {
   color: #703081;
 }
@@ -17037,7 +17056,7 @@ a.text-primary:hover,
 a.text-primary:focus {
   color: #50225c;
 }
-/* line 108, less\1_type.less */
+/* line 113, less\1_type.less */
 .text-success {
   color: #18cc6b;
 }
@@ -17046,7 +17065,7 @@ a.text-success:hover,
 a.text-success:focus {
   color: #139e53;
 }
-/* line 111, less\1_type.less */
+/* line 116, less\1_type.less */
 .text-info {
   color: #41a8f5;
 }
@@ -17055,7 +17074,7 @@ a.text-info:hover,
 a.text-info:focus {
   color: #1192f2;
 }
-/* line 114, less\1_type.less */
+/* line 119, less\1_type.less */
 .text-warning {
   color: #F0AD4E;
 }
@@ -17064,7 +17083,7 @@ a.text-warning:hover,
 a.text-warning:focus {
   color: #ec971f;
 }
-/* line 117, less\1_type.less */
+/* line 122, less\1_type.less */
 .text-danger {
   color: #ff1e26;
 }
@@ -17073,7 +17092,7 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: #ea0008;
 }
-/* line 124, less\1_type.less */
+/* line 129, less\1_type.less */
 .bg-primary {
   color: #fff;
   background-color: #703081;
@@ -17083,7 +17102,7 @@ a.bg-primary:hover,
 a.bg-primary:focus {
   background-color: #50225c;
 }
-/* line 130, less\1_type.less */
+/* line 135, less\1_type.less */
 .bg-success {
   background-color: #75efad;
 }
@@ -17092,7 +17111,7 @@ a.bg-success:hover,
 a.bg-success:focus {
   background-color: #47e992;
 }
-/* line 133, less\1_type.less */
+/* line 138, less\1_type.less */
 .bg-info {
   background-color: #badffb;
 }
@@ -17101,7 +17120,7 @@ a.bg-info:hover,
 a.bg-info:focus {
   background-color: #8ac9f9;
 }
-/* line 136, less\1_type.less */
+/* line 141, less\1_type.less */
 .bg-warning {
   background-color: #fae3c4;
 }
@@ -17110,7 +17129,7 @@ a.bg-warning:hover,
 a.bg-warning:focus {
   background-color: #f6ce95;
 }
-/* line 139, less\1_type.less */
+/* line 144, less\1_type.less */
 .bg-danger {
   background-color: #ff9ea1;
 }
@@ -17119,64 +17138,64 @@ a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #ff6b70;
 }
-/* line 147, less\1_type.less */
+/* line 152, less\1_type.less */
 .page-header {
-  padding-bottom: 9.5px;
-  margin: 42px 0 21px;
+  padding-bottom: 14px;
+  margin: 60px 0 30px;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 158, less\1_type.less */
+/* line 163, less\1_type.less */
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10.5px;
+  margin-bottom: 15px;
 }
-/* line 162, less\1_type.less */
+/* line 167, less\1_type.less */
 ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
 }
-/* line 171, less\1_type.less */
+/* line 176, less\1_type.less */
 .list-unstyled {
   padding-left: 0;
   list-style: none;
   margin-bottom: 0;
 }
-/* line 178, less\1_type.less */
+/* line 183, less\1_type.less */
 .list-inline {
   padding-left: 0;
   list-style: none;
   margin-bottom: 0;
   margin-left: -5px;
 }
-/* line 182, less\1_type.less */
+/* line 187, less\1_type.less */
 .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 190, less\1_type.less */
+/* line 195, less\1_type.less */
 dl {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
 }
-/* line 194, less\1_type.less */
+/* line 199, less\1_type.less */
 dt,
 dd {
   line-height: 1.42857143;
 }
-/* line 198, less\1_type.less */
+/* line 203, less\1_type.less */
 dt {
   font-weight: bold;
 }
-/* line 201, less\1_type.less */
+/* line 206, less\1_type.less */
 dd {
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  /* line 216, less\1_type.less */
+  /* line 221, less\1_type.less */
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -17186,36 +17205,36 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 223, less\1_type.less */
+  /* line 228, less\1_type.less */
   .dl-horizontal dd {
     margin-left: 180px;
   }
 }
-/* line 234, less\1_type.less */
+/* line 239, less\1_type.less */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #d6d6d6;
 }
-/* line 240, less\1_type.less */
+/* line 245, less\1_type.less */
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
-/* line 246, less\1_type.less */
+/* line 251, less\1_type.less */
 blockquote {
-  padding: 10.5px 21px;
-  margin: 0 0 21px;
-  font-size: 18.75px;
+  padding: 15px 30px;
+  margin: 0 0 30px;
+  font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
-/* line 255, less\1_type.less */
+/* line 260, less\1_type.less */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 262, less\1_type.less */
+/* line 267, less\1_type.less */
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -17224,13 +17243,13 @@ blockquote .small {
   line-height: 1.42857143;
   color: #d6d6d6;
 }
-/* line 270, less\1_type.less */
+/* line 275, less\1_type.less */
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
-/* line 279, less\1_type.less */
+/* line 284, less\1_type.less */
 .blockquote-reverse,
 blockquote.pull-right {
   padding-right: 15px;
@@ -17239,7 +17258,7 @@ blockquote.pull-right {
   border-left: 0;
   text-align: right;
 }
-/* line 291, less\1_type.less */
+/* line 296, less\1_type.less */
 .blockquote-reverse footer:before,
 blockquote.pull-right footer:before,
 .blockquote-reverse small:before,
@@ -17248,7 +17267,7 @@ blockquote.pull-right small:before,
 blockquote.pull-right .small:before {
   content: '';
 }
-/* line 292, less\1_type.less */
+/* line 297, less\1_type.less */
 .blockquote-reverse footer:after,
 blockquote.pull-right footer:after,
 .blockquote-reverse small:after,
@@ -17257,11 +17276,49 @@ blockquote.pull-right small:after,
 blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
-/* line 299, less\1_type.less */
+/* line 304, less\1_type.less */
 address {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   font-style: normal;
   line-height: 1.42857143;
+}
+/* line 311, less\1_type.less */
+h3 + .separator,
+h4 + .separator,
+h5 + .separator {
+  margin-top: 30px;
+}
+/* line 316, less\1_type.less */
+.separator-2,
+.separator-3 {
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  height: 1px;
+}
+/* line 323, less\1_type.less */
+.separator-2:after {
+  height: 1px;
+  background: #703081;
+  background: -moz-linear-gradient(90deg, #712C80 0, #E58058 80%, #FFFFFF 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, 90deg, color-stop(0, E58058), color-stop(80%, 712 C80));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(90deg, #712C80 0, #E58058 80%, #FFFFFF 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(90deg, #712C80 0, #E58058 80%, #FFFFFF 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #712C80 0, #E58058 80%, #FFFFFF 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1');
+  /* for IE */
+  background: linear-gradient(90deg, #712C80 0, #E58058 80%, #FFFFFF 100%);
+  /* W3C */
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  content: "";
+  width: 100%;
 }
 @media (min-width: 992px) {
   /* line 2, less\2_layout.less */

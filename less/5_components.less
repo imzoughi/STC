@@ -8,78 +8,97 @@
 
 .box-content {
   background-color : @white;
-  box-shadow: 0 4px 35px -15px @gray-base;
-  margin-bottom: 30px;
+  box-shadow       : 0 4px 35px -15px @gray-base;
+  margin-bottom    : 30px;
   &.bg-brand {
     background-color : @brand-primary;
-    color : @white;
+    color            : @white;
     }
   &--header {
-    padding: 20px @grid-gutter-width;
+    padding : 20px @grid-gutter-width;
     &--title {
-      line-height: 0.1;
-      margin: 0;
+      line-height : 0.1;
+      margin      : 0;
       }
     &--nav {
-      margin-left: auto;
+      margin-left : auto;
       > .option {
         a {
-          padding: 5px;
-          font-size: 18px;
-          line-height: 0.1;
+          padding     : 5px;
+          font-size   : 24px;
+          line-height : 0.1;
+
+          &:hover {
+            background-color : @white;
+            }
           }
         }
       }
     }
   &--inner {
-    padding: 30px;
+    padding : 30px;
     }
   }
 
 .box-head {
-  text-align: center;
-  display: table;
-  width: 100%;
+  text-align : center;
+  display    : table;
+  width      : 100%;
   .box-content--inner {
-    display: table-cell;
-    vertical-align: middle;
+    display        : table-cell;
+    vertical-align : middle;
     .head {
       &--title {
-        font-size: 24px;
-        font-weight: 200;
-        margin-bottom: 20px;
+        font-size     : 24px;
+        font-weight   : 200;
+        margin-bottom : 20px;
         }
       &--total {
-        font-size: 18px;
-        font-weight: 200;
+        font-size   : 18px;
+        font-weight : 200;
         span {
-          display: block;
+          display : block;
           }
         }
       }
     }
   }
+
 .state {
-  text-align: center;
+  text-align : center;
   &--icon {
-    margin-bottom: 20px;
+    margin-bottom : 20px;
     }
   &--label {
-    margin-bottom: 20px;
+    margin-bottom : 20px;
     }
   &--number {
-    font-size: 24px;
-    line-height: 1;
+    font-size   : 24px;
+    line-height : 1;
+    }
+
+  .checkbox.checkbox-block {
+    padding-top : 0;
+    .checkbox-indicator {
+      top    : 60px;
+      }
+    .state--icon {
+      margin-bottom : 0;
+      }
+    .state--label {
+      padding-top : 28px;
+      margin-bottom: 0;
+      }
     }
   }
 
 .circle-info {
-  font-size: 16px;
+  font-size : 16px;
   .border-radius(50%);
-  height: 40px;
-  width: 40px;
-  position: relative;
-  margin: 0 auto;
+  height    : 40px;
+  width     : 40px;
+  position  : relative;
+  margin    : 0 auto;
 
   &.red {
     background-color : @brand-danger;
@@ -106,10 +125,10 @@
     }
 
   > i {
-    color : @white;
-    position: absolute;
-    top :50%;
-    left: 50%;
-    .translate(-50%,-50%);
+    color    : @white;
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    .translate(-50%, -50%);
     }
   }

@@ -2,40 +2,38 @@
 // Forms
 // --------------------------------------------------
 
-
 // Normalize non-controls
 //
 // Restyle and baseline non-control form elements.
 
 fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
+  padding   : 0;
+  margin    : 0;
+  border    : 0;
   // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
   // so we reset that to ensure it behaves more like a standard block element.
   // See https://github.com/twbs/bootstrap/issues/12359.
-  min-width: 0;
-}
+  min-width : 0;
+  }
 
 legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: @line-height-computed;
-  font-size: (@font-size-base * 1.5);
-  line-height: inherit;
-  color: @legend-color;
-  border: 0;
-  border-bottom: 1px solid @legend-border-color;
-}
+  display       : block;
+  width         : 100%;
+  padding       : 0;
+  margin-bottom : @line-height-computed;
+  font-size     : (@font-size-base * 1.5);
+  line-height   : inherit;
+  color         : @legend-color;
+  border        : 0;
+  border-bottom : 1px solid @legend-border-color;
+  }
 
 label {
-  display: inline-block;
-  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
+  display       : inline-block;
+  max-width     : 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom : 5px;
+  font-weight   : bold;
+  }
 
 // Normalize form controls
 //
@@ -46,48 +44,47 @@ label {
 // Override content-box in Normalize (* isn't specific enough)
 input[type="search"] {
   .box-sizing(border-box);
-}
+  }
 
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 0 0;
-  margin-top: 1px \9; // IE8-9
-  line-height: normal;
-}
+  margin      : 0 0 0;
+  margin-top  : 1px \9; // IE8-9
+  line-height : normal;
+  }
 
 input[type="file"] {
-  display: block;
-}
+  display : block;
+  }
 
 // Make range inputs behave like textual form controls
 input[type="range"] {
-  display: block;
-  width: 100%;
-}
+  display : block;
+  width   : 100%;
+  }
 
 // Make multiple select elements height not fixed
 select[multiple],
 select[size] {
-  height: auto;
-}
+  height : auto;
+  }
 
 // Focus for file, radio, and checkbox
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   .tab-focus();
-}
+  }
 
 // Adjust output element
 output {
-  display: block;
-  padding-top: (@padding-base-vertical + 1);
-  font-size: @font-size-base;
-  line-height: @line-height-base;
-  color: @input-color;
-}
-
+  display     : block;
+  padding-top : (@padding-base-vertical + 1);
+  font-size   : @font-size-base;
+  line-height : @line-height-base;
+  color       : @input-color;
+  }
 
 // Common form controls
 //
@@ -112,18 +109,18 @@ output {
 // input[type="color"]
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: (@padding-base-top * 2) (@padding-base-horizontal /2) @padding-base-bottom;
-  font-size: @font-size-base;
-  line-height: @line-height-base;
-  color: @input-color;
-  background-color: @input-bg;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid @input-border;
-  border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  display          : block;
+  width            : 100%;
+  height           : @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding          : (@padding-base-top * 2) (@padding-base-horizontal /2) @padding-base-bottom;
+  font-size        : @font-size-base;
+  line-height      : @line-height-base;
+  color            : @input-color;
+  background-color : @input-bg;
+  background-image : none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border           : 1px solid @input-border;
+  border-radius    : @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, .075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -134,9 +131,9 @@ output {
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
-    border: 0;
-    background-color: transparent;
-  }
+    border           : 0;
+    background-color : transparent;
+    }
 
   // Disabled and read-only inputs
   //
@@ -146,21 +143,20 @@ output {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
-    background-color: @input-bg-disabled;
-    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
-  }
+    background-color : @input-bg-disabled;
+    opacity          : 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+    }
 
   &[disabled],
   fieldset[disabled] & {
-    cursor: @cursor-disabled;
-  }
+    cursor : @cursor-disabled;
+    }
 
   // Reset height for `textarea`s
   textarea& {
-    height: auto;
+    height : auto;
+    }
   }
-}
-
 
 // Search inputs in iOS
 //
@@ -170,9 +166,8 @@ output {
 // https://github.com/twbs/bootstrap/issues/11586.
 
 input[type="search"] {
-  -webkit-appearance: none;
-}
-
+  -webkit-appearance : none;
+  }
 
 // Special styles for iOS temporal inputs
 //
@@ -183,27 +178,26 @@ input[type="search"] {
 //
 // Note that as of 9.3, iOS doesn't support `week`.
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio : 0) {
   input[type="date"],
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
     &.form-control {
-      line-height: @input-height-base;
-    }
+      line-height : @input-height-base;
+      }
 
     &.input-sm,
     .input-group-sm & {
-      line-height: @input-height-small;
-    }
+      line-height : @input-height-small;
+      }
 
     &.input-lg,
     .input-group-lg & {
-      line-height: @input-height-large;
+      line-height : @input-height-large;
+      }
     }
   }
-}
-
 
 // Form groups
 //
@@ -211,9 +205,8 @@ input[type="search"] {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: @form-group-margin-bottom;
-}
-
+  margin-bottom : @form-group-margin-bottom;
+  }
 
 // Checkboxes and radios
 //
@@ -221,49 +214,51 @@ input[type="search"] {
 
 .radio,
 .checkbox {
-  position: relative;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  position      : relative;
+  display       : block;
+  margin-top    : 10px;
+  margin-bottom : 10px;
 
   label {
-    min-height: @line-height-computed; // Ensure the input doesn't jump when there is no text
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-weight: normal;
-    cursor: pointer;
+    min-height    : @line-height-computed; // Ensure the input doesn't jump when there is no text
+    padding-left  : 20px;
+    margin-bottom : 0;
+    font-weight   : normal;
+    cursor        : pointer;
+    }
   }
-}
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9;
-}
+  position    : absolute;
+  margin-left : -20px;
+  margin-top  : 4px \9;
+  }
 
 .radio + .radio,
 .checkbox + .checkbox {
-  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
-}
+  margin-top : -5px; // Move up sibling radios or checkboxes for tighter spacing
+  }
 
 // Radios and checkboxes on same line
 .radio-inline,
 .checkbox-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
-}
+  position       : relative;
+  display        : inline-block;
+  padding-left   : 20px;
+  margin-bottom  : 0;
+  vertical-align : middle;
+  font-weight    : normal;
+  cursor         : pointer;
+  }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px; // space out consecutive inline controls
-}
+  margin-top  : 0;
+  margin-left : 10px; // space out consecutive inline controls
+  }
 
 // Apply same disabled cursor tweak as for inputs
 // Some special care is needed because <label>s don't inherit their parent's `cursor`.
@@ -274,30 +269,29 @@ input[type="checkbox"] {
   &[disabled],
   &.disabled,
   fieldset[disabled] & {
-    cursor: @cursor-disabled;
+    cursor : @cursor-disabled;
+    }
   }
-}
+
 // These classes are used directly on <label>s
 .radio-inline,
 .checkbox-inline {
   &.disabled,
   fieldset[disabled] & {
-    cursor: @cursor-disabled;
+    cursor : @cursor-disabled;
+    }
   }
-}
+
 // These classes are used on elements with <label> descendants
 .radio,
 .checkbox {
   &.disabled,
   fieldset[disabled] & {
     label {
-      cursor: @cursor-disabled;
+      cursor : @cursor-disabled;
+      }
     }
   }
-}
-
-
-
 
 .checkbox {
   position    : relative;
@@ -328,7 +322,7 @@ input[type="checkbox"] {
   width               : 15px;
   height              : 15px;
   background-color    : #FFF;
-  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ccc' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  background-image    : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ccc' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
   border              : 1px solid #DDD;
   border-radius       : 0px;
   display             : block;
@@ -359,6 +353,17 @@ input[type="checkbox"] {
   .checkbox-indicator {
     left  : inherit;
     right : 0;
+    }
+  }
+
+.checkbox.checkbox-block {
+  padding-top : 24px;
+
+  .checkbox-indicator {
+    top   : 0;
+    left  : inherit;
+    right : 50%;
+    .translate(50%, 0);
     }
   }
 
@@ -435,16 +440,16 @@ input[type="checkbox"] {
 
 .radio .radio-indicator {
   content             : "";
-  width               : 16px;
-  height              : 16px;
+  width               : 14px;
+  height              : 14px;
   background-color    : @white;
-  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ccc'/%3E%3C/svg%3E");
+  background-image    : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ccc'/%3E%3C/svg%3E");
   border              : 1px solid #DDDDDD;
   border-radius       : 50%;
   display             : block;
   position            : absolute;
   left                : 0;
-  top                 : 0;
+  top                 : -2px;
   -webkit-transition  : all 0.2s ease;
   transition          : all 0.2s ease;
   background-repeat   : no-repeat;
@@ -486,7 +491,6 @@ input[type="checkbox"] {
   line-height : 1.2em;
   }
 
-
 // Static form control text
 //
 // Apply class to a `p` element to make any string of text align with labels in
@@ -494,19 +498,18 @@ input[type="checkbox"] {
 
 .form-control-static {
   // Size it appropriately next to real form controls
-  padding-top: (@padding-base-vertical + 1);
-  padding-bottom: (@padding-base-vertical + 1);
+  padding-top    : (@padding-base-vertical + 1);
+  padding-bottom : (@padding-base-vertical + 1);
   // Remove default margin from `p`
-  margin-bottom: 0;
-  min-height: (@line-height-computed + @font-size-base);
+  margin-bottom  : 0;
+  min-height     : (@line-height-computed + @font-size-base);
 
   &.input-lg,
   &.input-sm {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left  : 0;
+    padding-right : 0;
+    }
   }
-}
-
 
 // Form control sizing
 //
@@ -518,60 +521,61 @@ input[type="checkbox"] {
 
 .input-sm {
   .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
-}
+  }
+
 .form-group-sm {
   .form-control {
-    height: @input-height-small;
-    padding: @padding-small-vertical @padding-small-horizontal;
-    font-size: @font-size-small;
-    line-height: @line-height-small;
-    border-radius: @input-border-radius-small;
-  }
+    height        : @input-height-small;
+    padding       : @padding-small-vertical @padding-small-horizontal;
+    font-size     : @font-size-small;
+    line-height   : @line-height-small;
+    border-radius : @input-border-radius-small;
+    }
   select.form-control {
-    height: @input-height-small;
-    line-height: @input-height-small;
-  }
+    height      : @input-height-small;
+    line-height : @input-height-small;
+    }
   textarea.form-control,
   select[multiple].form-control {
-    height: auto;
-  }
+    height : auto;
+    }
   .form-control-static {
-    height: @input-height-small;
-    min-height: (@line-height-computed + @font-size-small);
-    padding: (@padding-small-vertical + 1) @padding-small-horizontal;
-    font-size: @font-size-small;
-    line-height: @line-height-small;
+    height      : @input-height-small;
+    min-height  : (@line-height-computed + @font-size-small);
+    padding     : (@padding-small-vertical + 1) @padding-small-horizontal;
+    font-size   : @font-size-small;
+    line-height : @line-height-small;
+    }
   }
-}
 
 .input-lg {
   .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @input-border-radius-large);
-}
+  }
+
 .form-group-lg {
   .form-control {
-    height: @input-height-large;
-    padding: @padding-large-vertical @padding-large-horizontal;
-    font-size: @font-size-large;
-    line-height: @line-height-large;
-    border-radius: @input-border-radius-large;
-  }
+    height        : @input-height-large;
+    padding       : @padding-large-vertical @padding-large-horizontal;
+    font-size     : @font-size-large;
+    line-height   : @line-height-large;
+    border-radius : @input-border-radius-large;
+    }
   select.form-control {
-    height: @input-height-large;
-    line-height: @input-height-large;
-  }
+    height      : @input-height-large;
+    line-height : @input-height-large;
+    }
   textarea.form-control,
   select[multiple].form-control {
-    height: auto;
-  }
+    height : auto;
+    }
   .form-control-static {
-    height: @input-height-large;
-    min-height: (@line-height-computed + @font-size-large);
-    padding: (@padding-large-vertical + 1) @padding-large-horizontal;
-    font-size: @font-size-large;
-    line-height: @line-height-large;
+    height      : @input-height-large;
+    min-height  : (@line-height-computed + @font-size-large);
+    padding     : (@padding-large-vertical + 1) @padding-large-horizontal;
+    font-size   : @font-size-large;
+    line-height : @line-height-large;
+    }
   }
-}
-
 
 // Form control feedback states
 //
@@ -579,63 +583,67 @@ input[type="checkbox"] {
 
 .has-feedback {
   // Enable absolute positioning
-  position: relative;
+  position : relative;
 
   // Ensure icons don't overlap text
   .form-control {
-    padding-right: (@input-height-base * 1.25);
+    padding-right : (@input-height-base * 1.25);
+    }
   }
-}
+
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2; // Ensure icon is above input groups
-  display: block;
-  width: @input-height-base;
-  height: @input-height-base;
-  line-height: @input-height-base;
-  text-align: center;
-  pointer-events: none;
-}
+  position       : absolute;
+  top            : 0;
+  right          : 0;
+  z-index        : 2; // Ensure icon is above input groups
+  display        : block;
+  width          : @input-height-base;
+  height         : @input-height-base;
+  line-height    : @input-height-base;
+  text-align     : center;
+  pointer-events : none;
+  }
+
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: @input-height-large;
-  height: @input-height-large;
-  line-height: @input-height-large;
-}
+  width       : @input-height-large;
+  height      : @input-height-large;
+  line-height : @input-height-large;
+  }
+
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: @input-height-small;
-  height: @input-height-small;
-  line-height: @input-height-small;
-}
+  width       : @input-height-small;
+  height      : @input-height-small;
+  line-height : @input-height-small;
+  }
 
 // Feedback states
 .has-success {
   .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
-}
+  }
+
 .has-warning {
   .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
-}
+  }
+
 .has-error {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
-}
+  }
 
 // Reposition feedback icon if input has visible label above
 .has-feedback label {
 
   & ~ .form-control-feedback {
-    top: (@line-height-computed + 5); // Height of the `label` and its margin
-  }
+    top : (@line-height-computed + 5); // Height of the `label` and its margin
+    }
   &.sr-only ~ .form-control-feedback {
-    top: 0;
+    top : 0;
+    }
   }
-}
-
 
 // Help text
 //
@@ -643,12 +651,11 @@ input[type="checkbox"] {
 // below a form control. Use for general help, formatting, or instructional text.
 
 .help-block {
-  display: block; // account for any element using help-block
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: lighten(@text-color, 25%); // lighten the text some for contrast
-}
-
+  display       : block; // account for any element using help-block
+  margin-top    : 5px;
+  margin-bottom : 10px;
+  color         : lighten(@text-color, 25%); // lighten the text some for contrast
+  }
 
 // Inline forms
 //
@@ -664,73 +671,73 @@ input[type="checkbox"] {
 .form-inline {
 
   // Kick in the inline
-  @media (min-width: @screen-sm-min) {
+  @media (min-width : @screen-sm-min) {
     // Inline-block all the things for "inline"
     .form-group {
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
+      display        : inline-block;
+      margin-bottom  : 0;
+      vertical-align : middle;
+      }
 
     // In navbar-form, allow folks to *not* use `.form-group`
     .form-control {
-      display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
-      vertical-align: middle;
-    }
+      display        : inline-block;
+      width          : auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align : middle;
+      }
 
     // Make static controls behave like regular ones
     .form-control-static {
-      display: inline-block;
-    }
+      display : inline-block;
+      }
 
     .input-group {
-      display: inline-table;
-      vertical-align: middle;
+      display        : inline-table;
+      vertical-align : middle;
 
       .input-group-addon,
       .input-group-btn,
       .form-control {
-        width: auto;
+        width : auto;
+        }
       }
-    }
 
     // Input groups need that 100% width though
     .input-group > .form-control {
-      width: 100%;
-    }
+      width : 100%;
+      }
 
     .control-label {
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
+      margin-bottom  : 0;
+      vertical-align : middle;
+      }
 
     // Remove default margin on radios/checkboxes that were used for stacking, and
     // then undo the floating of radios and checkboxes to match.
     .radio,
     .checkbox {
-      display: inline-block;
-      margin-top: 8px;
-      margin-bottom: 0;
-      vertical-align: middle;
+      display        : inline-block;
+      margin-top     : 8px;
+      margin-bottom  : 0;
+      vertical-align : middle;
 
       label {
-        padding-left: 0;
+        padding-left : 0;
+        }
       }
-    }
+
     .radio input[type="radio"],
     .checkbox input[type="checkbox"] {
-      position: relative;
-      margin-left: 0;
-    }
+      position    : relative;
+      margin-left : 0;
+      }
 
     // Re-override the feedback icon.
     .has-feedback .form-control-feedback {
-      top: 0;
+      top : 0;
+      }
     }
   }
-}
-
 
 // Horizontal forms
 //
@@ -746,63 +753,61 @@ input[type="checkbox"] {
   .checkbox,
   .radio-inline,
   .checkbox-inline {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: (@padding-base-vertical + 1); // Default padding plus a border
-  }
+    margin-top    : 0;
+    margin-bottom : 0;
+    padding-top   : (@padding-base-vertical + 1); // Default padding plus a border
+    }
   // Account for padding we're adding to ensure the alignment and of help text
   // and other content below items
   .radio,
   .checkbox {
-    min-height: (@line-height-computed + (@padding-base-vertical + 1));
-  }
+    min-height : (@line-height-computed + (@padding-base-vertical + 1));
+    }
 
   // Make form groups behave like rows
   .form-group {
     .make-row();
-  }
+    }
 
   // Reset spacing and right align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.
-  @media (min-width: @screen-sm-min) {
+  @media (min-width : @screen-sm-min) {
     .control-label {
-      text-align: right;
-      margin-bottom: 0;
-      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+      text-align    : right;
+      margin-bottom : 0;
+      padding-top   : (@padding-base-vertical + 1); // Default padding plus a border
+      }
     }
-  }
 
   // Validation states
   //
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
-    right: floor((@grid-gutter-width / 2));
-  }
+    right : floor((@grid-gutter-width / 2));
+    }
 
   // Form group sizes
   //
   // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
   // inputs and labels within a `.form-group`.
   .form-group-lg {
-    @media (min-width: @screen-sm-min) {
+    @media (min-width : @screen-sm-min) {
       .control-label {
-        padding-top: (@padding-large-vertical + 1);
-        font-size: @font-size-large;
+        padding-top : (@padding-large-vertical + 1);
+        font-size   : @font-size-large;
+        }
       }
     }
-  }
   .form-group-sm {
-    @media (min-width: @screen-sm-min) {
+    @media (min-width : @screen-sm-min) {
       .control-label {
-        padding-top: (@padding-small-vertical + 1);
-        font-size: @font-size-small;
+        padding-top : (@padding-small-vertical + 1);
+        font-size   : @font-size-small;
+        }
       }
     }
   }
-}
-
-
 
 .form-material {
 
@@ -900,11 +905,11 @@ input[type="checkbox"] {
     right : 0;
     }
   .help-block {
-    padding: 3px 0;
+    padding : 3px 0;
     }
   .has-error .help-block {
     background-color : transparent;
-    color : @brand-danger;
+    color            : @brand-danger;
     }
 
   // Form group sizes
@@ -926,5 +931,38 @@ input[type="checkbox"] {
         font-size   : @font-size-small;
         }
       }
+    }
+  }
+
+.input-search {
+  position: relative;
+  &:before {
+    content: "\e090";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    height: 16px;
+    width: 16px;
+    color: @gray-light;
+    font-family: 'simple-line-icons';
+    speak: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+  input {
+    padding: 10px 15px 5px 30px;
+    .border-radius(20px);
+    .placeholder(@gray-light);
     }
   }

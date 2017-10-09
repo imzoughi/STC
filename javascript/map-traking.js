@@ -262,7 +262,7 @@ var trakingMap = function () {
             '<i class="icon-plane"></i> Trips': gdotlayer
         };
 
-        layerbox = L.control.layers(null, overlayMaps, {collapsed: false, position: 'topleft'}).addTo(map);
+        //layerbox = L.control.layers(null, overlayMaps, {collapsed: false, position: 'topleft'}).addTo(map);
 
         //////////////////////////////////////////////////////////////////////////////////////////////
         //filtering the data//
@@ -324,18 +324,34 @@ var trakingMap = function () {
             return filteredDots;
         }
 
+        // Fullscreen Map
+        $('.btn-map-screen').on('click',function (e) {
 
-        $('.btn-map-fullscreen').on('click',function (e) {
             e.preventDefault();
-            $('#traking-map_id').toggleClass('fullscreen').prependTo('.content-wrapper');
-            $('.content-wrapper--inner').toggleClass('hidden');
+
+            var map = $('#traking-map_id');
+            var container = $('.content-wrapper--inner');
+
+            if($(map).hasClass('fullscreen')) {
+                $(map).toggleClass('fullscreen').appendTo('.section-traking-map .box-content--body');
+                $(container).toggleClass('hidden');
+                $(this).find('i').removeClass('icon-size-actual').addClass('icon-size-fullscreen');
+            } else {
+                $(map).toggleClass('fullscreen').prependTo('.content-wrapper');
+                $(container).toggleClass('hidden');
+                $(this).find('i').removeClass('icon-size-fullscreen').addClass('icon-size-actual');
+            }
+
         });
 
-
-        $('.btn-map-screen').on('click',function (e) {
+        $('#btn-locate').on('click',function (e) {
             e.preventDefault();
-            $('#traking-map_id').toggleClass('fullscreen').appendTo('.section-traking-map .box-content--body');
-            $('.content-wrapper--inner').toggleClass('hidden');
+            $('.map-summary').toggleClass('open');
+        });
+
+        $('#btn-map-summary-close').on('click',function (e) {
+            e.preventDefault();
+            $('.map-summary').toggleClass('open');
         });
 
         //////////////////////////////////////////////////////////////////////////////////////////////

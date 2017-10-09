@@ -69,6 +69,17 @@
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
   }
+.btn-secondary {
+  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
+  .box-shadow(0 2px 8px -3px @gray-base);
+
+  &:hover,
+  &:focus {
+    background-color : @btn-secondary-bg-hover;
+    color : @btn-secondary-color-hover;
+    border-color: @btn-secondary-border-hover;
+    }
+  }
 // Success appears as green
 .btn-success {
   .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);

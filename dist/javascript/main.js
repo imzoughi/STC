@@ -219,19 +219,16 @@ var trakingMap = function() {
             },
             onEachFeature: onEachGdot
         }).addTo(map);
-        var overlayMaps = {
-            '<i class="icon-location-pin"></i> Locate': dotlayer,
-            '<i class="icon-plane"></i> Trips': gdotlayer
-        };
-        layerbox = L.control.layers(null, overlayMaps, {
-            collapsed: !1,
-            position: "topleft"
-        }).addTo(map), $(".btn-map-fullscreen").on("click", function(e) {
-            e.preventDefault(), $("#traking-map_id").toggleClass("fullscreen").prependTo(".content-wrapper"), 
-            $(".content-wrapper--inner").toggleClass("hidden");
-        }), $(".btn-map-screen").on("click", function(e) {
-            e.preventDefault(), $("#traking-map_id").toggleClass("fullscreen").appendTo(".section-traking-map .box-content--body"), 
-            $(".content-wrapper--inner").toggleClass("hidden");
+        $(".btn-map-screen").on("click", function(e) {
+            e.preventDefault();
+            var map = $("#traking-map_id"), container = $(".content-wrapper--inner");
+            $(map).hasClass("fullscreen") ? ($(map).toggleClass("fullscreen").appendTo(".section-traking-map .box-content--body"), 
+            $(container).toggleClass("hidden"), $(this).find("i").removeClass("icon-size-actual").addClass("icon-size-fullscreen")) : ($(map).toggleClass("fullscreen").prependTo(".content-wrapper"), 
+            $(container).toggleClass("hidden"), $(this).find("i").removeClass("icon-size-fullscreen").addClass("icon-size-actual"));
+        }), $("#btn-locate").on("click", function(e) {
+            e.preventDefault(), $(".map-summary").toggleClass("open");
+        }), $("#btn-map-summary-close").on("click", function(e) {
+            e.preventDefault(), $(".map-summary").toggleClass("open");
         });
     }
     return {

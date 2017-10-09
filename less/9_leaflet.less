@@ -1,6 +1,6 @@
 .map-container {
-  height : 520px;
-  height : 57vh;
+  height : 580px;
+  height : 64vh;
   width  : 100%;
 
   &.fullscreen {
@@ -13,21 +13,26 @@
     }
   }
 
+.leaflet-container {
+  font : 14px/1.5 @font-family-base;
+  }
+
 .leaflet-bar {
   > a {
-    background-color : @white;
+    background-color : @brand-primary;
     border-bottom    : 0;
     .box-shadow(0 2px 8px -3px @gray-base);
-    color            : @brand-primary;
+    color            : @white;
     font-weight      : 200;
     text-decoration  : none;
     float            : left;
-    margin-right     : 2px;
+    margin-right     : 10px;
 
-    &:hover {
-      background-color : @brand-primary;
-      border-bottom    : 0;
+    &:hover,
+    &:focus {
+      background-color : darken(@brand-primary, 13%);
       color            : @white;
+      border-bottom    : 0;
       }
     }
   }
@@ -39,17 +44,23 @@
   }
 
 .leaflet-touch .leaflet-bar a {
+  color       : @white;
+  font-size   : 18px;
+  font-weight : 200;
+  height      : 35px;
+  width       : 35px;
+  line-height : 36px;
   .border-radius(4px);
   }
 
 .leaflet-bar a:first-child,
 .leaflet-touch .leaflet-bar a:first-child {
-  .border-radius(4px);
+  .border-radius(50%);
   }
 
 .leaflet-bar a:last-child,
 .leaflet-touch .leaflet-bar a:last-child {
-  .border-radius(4px);
+  .border-radius(50%);
   }
 
 .leaflet-top .leaflet-control {
@@ -65,7 +76,7 @@
   }
 
 .leaflet-right .leaflet-control {
-  margin-right : (@grid-gutter-width);
+  margin-right : 66px;
   }
 
 .leaflet-top.leaflet-left {
@@ -139,29 +150,102 @@
   }
 
 .leaflet-container {
+  font-family : @font-family-base;
+  a {
+    color : inherit;
+    }
   .btn-map-screen {
-    position         : absolute;
-    bottom           : 80px;
-    right             : 30px;
-    z-index          : 999;
-    background-color : @white;
-    .border-radius(4px);
-    .box-shadow(0 2px 8px -3px @gray-base);
-    color            : @brand-primary;
-    font-size        : 24px;
-    line-height      : 0.1;
-    padding          : 10px;
+    background-color : @brand-primary;
+    color            : @white;
+    font-size        : 16px;
     text-decoration  : none;
-    display          : none;
+    border           : 0 none;
+    line-height      : 44px;
+    height           : 35px;
+    width            : 35px;
+    .border-radius(50%);
+    .box-shadow(0 2px 8px -3px @gray-base);
+    position         : absolute;
+    top              : 30px;
+    right            : 30px;
+    z-index          : 999;
 
     &:hover {
-      background-color : @brand-primary;
-      color            : @white;
+      background-color : darken(@brand-primary, 13%);
+      }
+    }
+  .map-tools {
+    position : absolute;
+    top      : 30px;
+    left     : 30px;
+    z-index  : 999;
+    .btn-secondary {
+      font-family : @font-family-base;
+      font-size   : 14px;
+      font-weight : 200;
+      text-align  : center;
+      padding     : 10px 20px 5px;
+      min-width   : 100px;
+      > i {
+        display       : block;
+        font-size     : 24px;
+        margin-bottom : 5px;
+        text-align    : center;
+        }
+      }
+    }
+  .map-summary {
+    background-color : @white;
+    cursor           : default;
+    height           : 100%;
+    width            : 50%;
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+    z-index          : 9999;
+    .translate(-100%, 0);
+    .transition(all 300ms);
+
+    @media (max-width: @screen-md-max) {
+      width: 70%;
+      }
+
+    &.open {
+      .translate(0, 0);
+      }
+
+    &.box-content {
+      .box-content--header {
+        position         : absolute;
+        top              : 0;
+        z-index          : 1;
+        background-color : #FFF;
+        width            : 100%;
+        }
+      .box-content--body {
+        margin-top : 75px;
+        overflow   : auto;
+        height     : calc(~'100% - 85px');
+        width      : 100%;
+        }
+      }
+
+    .inner-box {
+      padding : 20px 30px;
+      }
+    .status-filters {
+      border-top    : 1px solid @gray-lighter;
+      border-bottom : 1px solid @gray-lighter;
+      }
+    .table-status-filters {
+      background-color : @gray-lighter;
+      .radio {
+        color       : @gray-dark;
+        font-size   : 15px;
+        font-weight : bold;
+        }
       }
     }
   &.fullscreen {
-    .btn-map-screen {
-      display : block;
-      }
     }
   }

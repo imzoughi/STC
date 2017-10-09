@@ -482,19 +482,337 @@
                                 <!--.box-content-->
                                 <div class="box-content">
                                     <!--.box-content--header-->
-                                    <div class="box-content--header row-flex">
-                                        <h3 class="box-content--header--title"><i class="icon-location-pin icon-before"></i><strong>Live Traking</strong> Map</h3>
-                                        <ul class="nav nav-pills box-content--header--nav">
-                                            <li class="option">
-                                                <a href="#" class="btn-map-fullscreen"><i class="icon-size-fullscreen"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--.box-content--header-->
                                     <div class="box-content--body">
+                                        <!--.map-container-->
+                                        <div id="traking-map_id" class="map-container">
 
-                                        <div id="traking-map_id" class="map-container"><a href="#" class="btn-map-screen"><i class="icon-size-actual"></i></a></div>
+                                            <!--.map-tools-->
+                                            <ul class="nav nav-pills map-tools">
+                                                <li class="option">
+                                                    <!--.btn-locate-->
+                                                    <button class="btn btn-secondary" id="btn-locate">
+                                                        <i class="icon-location-pin"></i> Locate
+                                                    </button>
+                                                    <!--/.btn-locate-->
+                                                </li>
+                                            </ul>
+                                            <!--/.map-tools-->
 
+                                            <!--.btn-map-screen-->
+                                            <button type="button" class="btn-map-screen"><i class="icon-size-fullscreen"></i></button>
+                                            <!--/.btn-map-screen-->
+
+                                            <!--.map-summary-->
+                                            <div class="map-summary box-content">
+
+                                                <div class="box-content--header row-flex">
+                                                    <h3 class="box-content--header--title">
+                                                        <i class="icon-location-pin icon-before"></i><strong>Live Traking</strong> Map</h3>
+                                                    <ul class="nav nav-pills box-content--header--nav">
+                                                        <li class="option">
+                                                            <a href="#" id="btn-map-summary-close"><i class="icon-close"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="box-content--body">
+                                                    <!--.status-filters-->
+                                                    <div class="status-filters inner-box grid-pad">
+                                                        <form class="row row-flex">
+                                                            <!--.state-->
+                                                            <div class="col-lg-1-6 col-md-1-6 col-sm-1-3 col-xs-1-3">
+                                                                <div class="state">
+                                                                    <label class="checkbox checkbox-block">
+                                                                        <div class="state--icon">
+                                                                            <div class="circle-info green">
+                                                                                <i class="icon-refresh"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="checkbox" name="moving" id="moving" value="moving">
+                                                                        <span class="checkbox-indicator"></span>
+                                                                        <div class="state--label">Moving</div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.state-->
+                                                            <!--.state-->
+                                                            <div class="col-lg-1-6 col-md-1-6 col-sm-1-3 col-xs-1-3">
+                                                                <div class="state">
+                                                                    <label class="checkbox checkbox-block">
+                                                                        <div class="state--icon">
+                                                                            <div class="circle-info red">
+                                                                                <i class="icon-ban"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="checkbox" name="stopped" id="stopped" value="stopped">
+                                                                        <span class="checkbox-indicator"></span>
+                                                                        <div class="state--label">Stopped</div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.state-->
+                                                            <!--.state-->
+                                                            <div class="col-lg-1-6 col-md-1-6 col-sm-1-3 col-xs-1-3">
+                                                                <div class="state">
+                                                                    <label class="checkbox checkbox-block">
+                                                                        <div class="state--icon">
+                                                                            <div class="circle-info gray-light">
+                                                                                <i class="icon-power"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="checkbox" name="inactive" id="inactive" value="inactive">
+                                                                        <span class="checkbox-indicator"></span>
+                                                                        <div class="state--label">Inactive</div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.state-->
+                                                            <!--.state-->
+                                                            <div class="col-lg-1-6 col-md-1-6 col-sm-1-3 col-xs-1-3">
+                                                                <div class="state">
+                                                                    <label class="checkbox checkbox-block">
+                                                                        <div class="state--icon">
+                                                                            <div class="circle-info blue">
+                                                                                <i class="icon-target"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="checkbox" name="Idle" id="idle" value="idle">
+                                                                        <span class="checkbox-indicator"></span>
+                                                                        <div class="state--label">Idle</div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.state-->
+                                                            <!--.state-->
+                                                            <div class="col-lg-1-6 col-md-1-6 col-sm-1-3 col-xs-1-3">
+                                                                <div class="state">
+                                                                    <label class="checkbox checkbox-block">
+                                                                        <div class="state--icon">
+                                                                            <div class="circle-info red">
+                                                                                <i class="icon-clock"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="checkbox" name="long_stopped" id="long_stopped" value="long_stopped">
+                                                                        <span class="checkbox-indicator"></span>
+                                                                        <div class="state--label">Long stopped</div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.state-->
+                                                            <!--.state-->
+                                                            <div class="col-lg-1-6 col-md-1-6 col-sm-1-3 col-xs-1-3">
+                                                                <div class="state">
+                                                                    <label class="checkbox checkbox-block">
+                                                                        <div class="state--icon">
+                                                                            <div class="circle-info gray-light">
+                                                                                <i class="icon-question"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="checkbox" name="no-comm" id="no-comm" value="no-comm">
+                                                                        <span class="checkbox-indicator"></span>
+                                                                        <div class="state--label">No comm.</div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.state-->
+                                                        </form>
+                                                    </div>
+                                                    <!--/.status-filters-->
+
+                                                    <!--.status-filters-->
+                                                    <div class="table-status-filters inner-box grid-pad">
+                                                        <form class="row-table v-align-m">
+                                                            <!--.state-->
+                                                            <div class="col-lg-3-4 col-md-2-3">
+                                                                <label class="radio radio-inline">
+                                                                    <input type="radio" name="status-options" id="assets" value="assets">
+                                                                    <span class="radio-indicator"></span> Assets </label>
+                                                                <label class="radio radio-inline">
+                                                                    <input type="radio" name="status-options" id="Driver" value="Driver">
+                                                                    <span class="radio-indicator"></span> Driver </label>
+                                                                <label class="radio radio-inline">
+                                                                    <input type="radio" name="status-options" id="poi" value="poi">
+                                                                    <span class="radio-indicator"></span> POI </label>
+                                                            </div>
+                                                            <div class="col-lg-1-4 col-md-1-3">
+                                                                <div class="input-search">
+                                                                    <input type="text" class="form-control input-sm" placeholder="Search by ID" />
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--/.status-filters-->
+
+                                                    <div class="table-status inner-box">
+                                                        <ul class="nav nav-pills">
+                                                            <li>
+                                                                <button class="btn square btn-default btn-sm">Locate selected</button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="btn square btn-default btn-sm">Reset</button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <table class="table table-colored">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    <label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                        <span class="checkbox-indicator"></span> </label>
+                                                                </th>
+                                                                <th>Asset Name</th>
+                                                                <th>Status</th>
+                                                                <th width="60%">Last Comm. Time</th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Camry</td>
+                                                                <td><span class="text-success">Moving</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Dodge</td>
+                                                                <td><span class="text-danger">Stopped</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Dodge</td>
+                                                                <td><span class="text-info">Idle</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Camry</td>
+                                                                <td><span class="text-success">Moving</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Dodge</td>
+                                                                <td><span class="text-danger">Stopped</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Dodge</td>
+                                                                <td><span class="text-info">Idle</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Camry</td>
+                                                                <td><span class="text-success">Moving</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Dodge</td>
+                                                                <td><span class="text-danger">Stopped</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><label class="checkbox checkbox-inline"> <input type="checkbox">
+                                                                    <span class="checkbox-indicator"></span> </label>
+                                                                </td>
+                                                                <td>Dodge</td>
+                                                                <td><span class="text-info">Idle</span></td>
+                                                                <td>11/05/2016 05:10 pm</td>
+                                                                <td>
+                                                                    <ul class="list-unstyled list-inline pull-right">
+                                                                        <li><a href="#"><i class="icon-disc"></i></a></li>
+                                                                        <li><a href="#"><i class="icon-location-pin icon-before"></i></a></li>
+                                                                    </ul>
+                                                                </td>
+                                                            </tr>
+
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!--/.map-summary-->
+
+                                        </div>
+                                        <!--/.map-container-->
                                     </div>
                                 </div>
                                 <!--/.box-content-->

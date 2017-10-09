@@ -219,8 +219,9 @@
         position         : absolute;
         top              : 0;
         z-index          : 1;
-        background-color : #FFF;
+        background-color : @white;
         width            : 100%;
+        .box-shadow(0 2px 10px -8px @gray-base);
         }
       .box-content--body {
         margin-top : 75px;
@@ -234,7 +235,7 @@
       padding : 20px 30px;
       }
     .status-filters {
-      border-top    : 1px solid @gray-lighter;
+      //border-top    : 1px solid @gray-lighter;
       border-bottom : 1px solid @gray-lighter;
       }
     .table-status-filters {

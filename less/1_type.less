@@ -104,11 +104,17 @@ mark,
 .text-capitalize     { text-transform: capitalize; }
 
 // Contextual colors
+.text-white {
+  color: @white;
+  }
 .text-muted {
   color: @text-muted;
   }
 .text-primary {
   .text-emphasis-variant(@brand-primary);
+  }
+.text-secondary {
+  .text-emphasis-variant(@brand-secondary);
   }
 .text-success {
   .text-emphasis-variant(@state-success-text);

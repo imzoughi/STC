@@ -10,6 +10,7 @@ module.exports = function (grunt) {
                     // files go here, like so:
 
                     "dist/index.html": "index.html",
+                    "dist/identification.html": "identification.html",
                     "dist/home.html": "home.html",
                     "dist/page-fleet.html": "page-fleet.html",
                     "dist/components.html": "components.html",

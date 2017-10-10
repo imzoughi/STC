@@ -41,6 +41,12 @@ Main Page Content
     content : 'mobile';
     }
 
+  .bg-img-traffic {
+    background : url('../images/bg-traffic.jpg') no-repeat center center transparent;
+    -webkit-background-size : cover;
+    background-size : cover;
+    }
+
   @media (min-width : @screen-md) {
 
     .content-wrapper {
@@ -51,6 +57,10 @@ Main Page Content
       overflow-y       : auto;
       margin-left      : @sidebar-width-M;
       padding-top      : @header-height-M;
+
+      &.full-w {
+        margin-left: 0;
+        }
 
       &--inner {
         padding : @grid-gutter-width (@grid-gutter-width /2);

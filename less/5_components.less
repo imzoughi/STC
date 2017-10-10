@@ -80,14 +80,14 @@
   .checkbox.checkbox-block {
     padding-top : 0;
     .checkbox-indicator {
-      top    : 60px;
+      top : 60px;
       }
     .state--icon {
       margin-bottom : 0;
       }
     .state--label {
-      padding-top : 28px;
-      margin-bottom: 0;
+      padding-top   : 28px;
+      margin-bottom : 0;
       }
     }
   }
@@ -99,6 +99,14 @@
   width     : 40px;
   position  : relative;
   margin    : 0 auto;
+
+  &.brand-primary {
+    background-color : @brand-primary;
+    }
+
+  &.brand-secondary {
+    background-color : @brand-secondary;
+    }
 
   &.red {
     background-color : @brand-danger;
@@ -130,5 +138,37 @@
     top      : 50%;
     left     : 50%;
     .translate(-50%, -50%);
+    }
+
+  &.circle-md {
+    height : 50px;
+    width  : 50px;
+
+    > i {
+      font-size : 20px;
+      }
+    }
+  }
+
+.box-login {
+  background-color : @brand-primary;
+  .border-radius(30px 30px 150px 150px);
+
+  .opacity(0.95);
+
+  margin-top: 50px;
+
+  &--inner {
+    padding : 30px;
+    }
+
+  &--head {
+    margin-bottom : 30px;
+    }
+  .form-control {
+    font-size: 18px;
+    }
+  .lang {
+    margin-top: 30px;
     }
   }

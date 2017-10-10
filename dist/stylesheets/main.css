@@ -17234,9 +17234,9 @@ input[type="button"].btn-block {
 /*Buttons with radius*/
 /* line 378, less\helpers.less */
 .radius-50 {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
 }
 /* TABLE OF CONTENTS
 1) Typography

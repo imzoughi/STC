@@ -206,8 +206,8 @@
     .translate(-100%, 0);
     .transition(all 300ms);
 
-    @media (max-width: @screen-md-max) {
-      width: 70%;
+    @media (max-width : @screen-md-max) {
+      width : 70%;
       }
 
     &.open {
@@ -244,6 +244,15 @@
         color       : @gray-dark;
         font-size   : 15px;
         font-weight : bold;
+        }
+      }
+
+    .list-asset-options {
+      > li {
+        > a {
+          font-size       : 16px;
+          text-decoration : none;
+          }
         }
       }
     }

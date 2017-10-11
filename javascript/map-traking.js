@@ -344,11 +344,13 @@ var trakingMap = function () {
 
         });
 
+        // Show locate window in the map container
         $('#btn-locate').on('click',function (e) {
             e.preventDefault();
             $('.map-summary').toggleClass('open');
         });
 
+        // Close locate window in the map container
         $('#btn-map-summary-close').on('click',function (e) {
             e.preventDefault();
             $('.map-summary').toggleClass('open');

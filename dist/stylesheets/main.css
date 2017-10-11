@@ -12,6 +12,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900|Dosis:200,300,400,500,600,700,800&subset=arabic');
 /* line 9, bower_components\bootstrap\less\normalize.less */
 html {
   font-family: sans-serif;
@@ -1403,7 +1404,7 @@ html {
 }
 /* line 27, bower_components\bootstrap\less\scaffolding.less */
 body {
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #703081;
@@ -7697,7 +7698,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7831,7 +7832,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -13191,7 +13192,7 @@ html {
 }
 /* line 27, less\scaffolding.less */
 body {
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #703081;
@@ -15473,7 +15474,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -15622,7 +15623,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 26, less\buttons.less */
+/* line 21, less\buttons.less */
+.btn.font-ar {
+  padding: 6px 24px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+/* line 29, less\buttons.less */
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -15632,14 +15641,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 32, less\buttons.less */
+/* line 35, less\buttons.less */
 .btn:hover,
 .btn:focus,
 .btn.focus {
   color: #da3f7b;
   text-decoration: none;
 }
-/* line 39, less\buttons.less */
+/* line 42, less\buttons.less */
 .btn:active,
 .btn.active {
   outline: 0;
@@ -15647,7 +15656,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-/* line 46, less\buttons.less */
+/* line 49, less\buttons.less */
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
@@ -15657,12 +15666,12 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 55, less\buttons.less */
+/* line 58, less\buttons.less */
 a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
 }
-/* line 66, less\buttons.less */
+/* line 69, less\buttons.less */
 .btn-default {
   color: #FFF;
   background-color: #da3f7b;
@@ -15727,7 +15736,7 @@ fieldset[disabled] .btn-default.focus {
   color: #da3f7b;
   background-color: #FFF;
 }
-/* line 69, less\buttons.less */
+/* line 72, less\buttons.less */
 .btn-primary {
   color: #FFF;
   background-color: #703081;
@@ -15792,7 +15801,7 @@ fieldset[disabled] .btn-primary.focus {
   color: #703081;
   background-color: #FFF;
 }
-/* line 72, less\buttons.less */
+/* line 75, less\buttons.less */
 .btn-secondary {
   color: #703081;
   background-color: #FFF;
@@ -15859,14 +15868,14 @@ fieldset[disabled] .btn-secondary.focus {
   color: #FFF;
   background-color: #703081;
 }
-/* line 76, less\buttons.less */
+/* line 79, less\buttons.less */
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: #703081;
   color: #FFF;
   border-color: #60296e;
 }
-/* line 84, less\buttons.less */
+/* line 87, less\buttons.less */
 .btn-success {
   color: #FFF;
   background-color: #18cc6b;
@@ -15931,7 +15940,7 @@ fieldset[disabled] .btn-success.focus {
   color: #18cc6b;
   background-color: #FFF;
 }
-/* line 88, less\buttons.less */
+/* line 91, less\buttons.less */
 .btn-info {
   color: #FFF;
   background-color: #41a8f5;
@@ -15996,7 +16005,7 @@ fieldset[disabled] .btn-info.focus {
   color: #41a8f5;
   background-color: #FFF;
 }
-/* line 92, less\buttons.less */
+/* line 95, less\buttons.less */
 .btn-warning {
   color: #FFF;
   background-color: #F0AD4E;
@@ -16061,7 +16070,7 @@ fieldset[disabled] .btn-warning.focus {
   color: #F0AD4E;
   background-color: #FFF;
 }
-/* line 96, less\buttons.less */
+/* line 99, less\buttons.less */
 .btn-danger {
   color: #FFF;
   background-color: #ff1e26;
@@ -16126,14 +16135,14 @@ fieldset[disabled] .btn-danger.focus {
   color: #ff1e26;
   background-color: #FFF;
 }
-/* line 105, less\buttons.less */
+/* line 108, less\buttons.less */
 .btn-link {
   color: #703081;
   font-size: 14px;
   font-weight: normal;
   border-radius: 0;
 }
-/* line 111, less\buttons.less */
+/* line 114, less\buttons.less */
 .btn-link,
 .btn-link:active,
 .btn-link.active,
@@ -16143,21 +16152,21 @@ fieldset[disabled] .btn-link {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 119, less\buttons.less */
+/* line 122, less\buttons.less */
 .btn-link,
 .btn-link:hover,
 .btn-link:focus,
 .btn-link:active {
   border-color: transparent;
 }
-/* line 125, less\buttons.less */
+/* line 128, less\buttons.less */
 .btn-link:hover,
 .btn-link:focus {
   color: #401b49;
   text-decoration: underline;
   background-color: transparent;
 }
-/* line 133, less\buttons.less */
+/* line 136, less\buttons.less */
 .btn-link[disabled]:hover,
 fieldset[disabled] .btn-link:hover,
 .btn-link[disabled]:focus,
@@ -16165,7 +16174,7 @@ fieldset[disabled] .btn-link:focus {
   color: #d6d6d6;
   text-decoration: none;
 }
-/* line 145, less\buttons.less */
+/* line 148, less\buttons.less */
 .btn-lg,
 .btn-group-lg > .btn,
 .btn-group-lg > .btn {
@@ -16175,7 +16184,15 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 4px;
   margin-bottom: 15px;
 }
-/* line 149, less\buttons.less */
+/* line 151, less\buttons.less */
+.btn-lg.font-ar {
+  padding: 10px 32px 20px;
+  font-size: 21px;
+  line-height: 1.3333333;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+/* line 155, less\buttons.less */
 .btn-sm,
 .btn-group-sm > .btn,
 .btn-group-sm > .btn {
@@ -16185,7 +16202,15 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 4px;
   margin-bottom: 10px;
 }
-/* line 153, less\buttons.less */
+/* line 158, less\buttons.less */
+.btn-sm.font-ar {
+  padding: 5px 20px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+/* line 162, less\buttons.less */
 .btn-xs,
 .btn-group-xs > .btn,
 .btn-group-xs > .btn {
@@ -16195,41 +16220,49 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 4px;
   margin-bottom: 5px;
 }
-/* line 157, less\buttons.less */
+/* line 164, less\buttons.less */
+.btn-xs.font-ar {
+  padding: 1px 5px 2px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+/* line 169, less\buttons.less */
 .btn-xs-link {
   font-size: 12px;
 }
-/* line 161, less\buttons.less */
+/* line 173, less\buttons.less */
 .btn-sm-link {
   font-size: 14px;
 }
-/* line 165, less\buttons.less */
+/* line 177, less\buttons.less */
 .btn-lg-link {
   font-size: 21px;
 }
-/* line 175, less\buttons.less */
+/* line 187, less\buttons.less */
 .btn-block {
   display: block;
   width: 100%;
 }
-/* line 181, less\buttons.less */
+/* line 193, less\buttons.less */
 .btn-block + .btn-block {
   margin-top: 5px;
 }
-/* line 189, less\buttons.less */
+/* line 201, less\buttons.less */
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
 /*Animated Buttons*/
-/* line 195, less\buttons.less */
+/* line 207, less\buttons.less */
 .btn-animated {
   position: relative;
   min-width: 0!important;
   padding-right: 45px!important;
 }
-/* line 200, less\buttons.less */
+/* line 212, less\buttons.less */
 .btn-animated i {
   -webkit-transition: right 0.2s ease-in-out;
   -o-transition: right 0.2s ease-in-out;
@@ -16241,7 +16274,7 @@ input[type="button"].btn-block {
   top: 0;
   min-width: 12px;
 }
-/* line 209, less\buttons.less */
+/* line 221, less\buttons.less */
 .btn-animated:after {
   width: 35px;
   height: 100%;
@@ -16257,73 +16290,73 @@ input[type="button"].btn-block {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 221, less\buttons.less */
+/* line 233, less\buttons.less */
 .btn-animated.radius-50:after {
   -webkit-border-radius: 0 25px 25px 0;
   -moz-border-radius: 0 25px 25px 0;
   border-radius: 0 25px 25px 0;
 }
-/* line 224, less\buttons.less */
+/* line 236, less\buttons.less */
 .btn-animated.btn-gray-transparent:after {
   background-color: rgba(0, 0, 0, 0.05);
 }
-/* line 227, less\buttons.less */
+/* line 239, less\buttons.less */
 .btn-animated:hover:after {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 230, less\buttons.less */
+/* line 242, less\buttons.less */
 .btn-animated:hover i {
   right: 11px;
 }
-/* line 233, less\buttons.less */
+/* line 245, less\buttons.less */
 .btn-animated.btn-sm {
   padding-right: 35px!important;
 }
-/* line 236, less\buttons.less */
+/* line 248, less\buttons.less */
 .btn-animated.btn-sm:after {
   width: 25px;
 }
-/* line 239, less\buttons.less */
+/* line 251, less\buttons.less */
 .btn-animated.btn-sm i {
   right: 14px;
   line-height: 28px;
   min-width: 11px;
 }
-/* line 244, less\buttons.less */
+/* line 256, less\buttons.less */
 .btn-animated.btn-sm:hover i {
   right: 7px;
 }
-/* line 247, less\buttons.less */
+/* line 259, less\buttons.less */
 .btn-animated.btn-lg {
   padding-right: 60px!important;
 }
-/* line 250, less\buttons.less */
+/* line 262, less\buttons.less */
 .btn-animated.btn-lg:after {
   width: 45px;
 }
-/* line 253, less\buttons.less */
+/* line 265, less\buttons.less */
 .btn-animated.btn-lg i {
   right: 25px;
   line-height: 48px;
   min-width: 15px;
 }
-/* line 258, less\buttons.less */
+/* line 270, less\buttons.less */
 .btn-animated.btn-lg:hover i {
   right: 15px;
 }
 /*Background Transition*/
-/* line 262, less\buttons.less */
+/* line 274, less\buttons.less */
 .btn-hvr {
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 265, less\buttons.less */
+/* line 277, less\buttons.less */
 .btn-hvr.radius-50 {
   overflow: hidden;
 }
-/* line 268, less\buttons.less */
+/* line 280, less\buttons.less */
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-left:hover,
 .hvr-sweep-to-bottom:hover,
@@ -16338,21 +16371,21 @@ input[type="button"].btn-block {
 .hvr-shutter-out-vertical:hover {
   background: transparent;
 }
-/* line 282, less\buttons.less */
+/* line 294, less\buttons.less */
 .hvr-radial-in,
 .hvr-rectangle-in,
 .hvr-shutter-in-horizontal,
 .hvr-shutter-in-vertical {
   background: #441d4f;
 }
-/* line 288, less\buttons.less */
+/* line 300, less\buttons.less */
 .hvr-radial-in:hover,
 .hvr-rectangle-in:hover,
 .hvr-shutter-in-horizontal:hover,
 .hvr-shutter-in-vertical:hover {
   background: #441d4f;
 }
-/* line 294, less\buttons.less */
+/* line 306, less\buttons.less */
 .hvr-radial-in:before,
 .hvr-rectangle-in:before,
 .hvr-shutter-in-horizontal:before,
@@ -16362,7 +16395,7 @@ input[type="button"].btn-block {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 301, less\buttons.less */
+/* line 313, less\buttons.less */
 .hvr-sweep-to-right:before,
 .hvr-sweep-to-left:before,
 .hvr-sweep-to-bottom:before,
@@ -16378,14 +16411,14 @@ input[type="button"].btn-block {
   background: #441d4f;
 }
 /*ie9*/
-/* line 316, less\buttons.less */
+/* line 328, less\buttons.less */
 .no-csstransitions .hvr-radial-in,
 .no-csstransitions .hvr-rectangle-in,
 .no-csstransitions .hvr-shutter-in-horizontal,
 .no-csstransitions .hvr-shutter-in-vertical {
   background: transparent;
 }
-/* line 322, less\buttons.less */
+/* line 334, less\buttons.less */
 .no-csstransitions .hvr-sweep-to-right:hover,
 .no-csstransitions .hvr-sweep-to-left:hover,
 .no-csstransitions .hvr-sweep-to-bottom:hover,
@@ -17227,16 +17260,20 @@ input[type="button"].btn-block {
 }
 /* line 373, less\helpers.less */
 .square {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 /*Buttons with radius*/
 /* line 378, less\helpers.less */
 .radius-50 {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  border-radius: 50px !important;
+}
+/* line 382, less\helpers.less */
+.font-ar {
+  font-family: 'stc-ar', 'Cairo', Times, serif;
 }
 /* TABLE OF CONTENTS
 1) Typography
@@ -17283,6 +17320,21 @@ input[type="button"].btn-block {
 /*************************/
 /* STC arabic
 /*************************/
+@font-face {
+  font-family: 'stc-ar';
+  src: url("../fonts/stc-ar/STC-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'stc-ar';
+  src: url("../fonts/stc-ar/STC-Light.ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'stc-ar';
+  src: url("../fonts/stc-ar/STC-Bold.ttf");
+  font-weight: bold;
+}
 /* line 9, less\1_type.less */
 h1,
 h2,
@@ -17842,54 +17894,55 @@ h5 + .separator {
 }
 /* line 51, less\5_components.less */
 .box-head .box-content--inner .head--title {
+  font-family: 'stc-ar', 'Cairo', Times, serif;
   font-size: 24px;
   font-weight: 200;
   margin-bottom: 20px;
 }
-/* line 56, less\5_components.less */
+/* line 57, less\5_components.less */
 .box-head .box-content--inner .head--total {
   font-size: 18px;
   font-weight: 200;
 }
-/* line 59, less\5_components.less */
+/* line 60, less\5_components.less */
 .box-head .box-content--inner .head--total span {
   display: block;
 }
-/* line 67, less\5_components.less */
+/* line 68, less\5_components.less */
 .state {
   text-align: center;
 }
-/* line 69, less\5_components.less */
+/* line 70, less\5_components.less */
 .state--icon {
   margin-bottom: 20px;
 }
-/* line 72, less\5_components.less */
+/* line 73, less\5_components.less */
 .state--label {
   margin-bottom: 20px;
 }
-/* line 75, less\5_components.less */
+/* line 76, less\5_components.less */
 .state--number {
   font-size: 24px;
   line-height: 1;
 }
-/* line 80, less\5_components.less */
+/* line 81, less\5_components.less */
 .state .checkbox.checkbox-block {
   padding-top: 0;
 }
-/* line 82, less\5_components.less */
+/* line 83, less\5_components.less */
 .state .checkbox.checkbox-block .checkbox-indicator {
   top: 60px;
 }
-/* line 85, less\5_components.less */
+/* line 86, less\5_components.less */
 .state .checkbox.checkbox-block .state--icon {
   margin-bottom: 0;
 }
-/* line 88, less\5_components.less */
+/* line 89, less\5_components.less */
 .state .checkbox.checkbox-block .state--label {
   padding-top: 28px;
   margin-bottom: 0;
 }
-/* line 95, less\5_components.less */
+/* line 96, less\5_components.less */
 .circle-info {
   font-size: 16px;
   -webkit-border-radius: 50%;
@@ -17900,39 +17953,39 @@ h5 + .separator {
   position: relative;
   margin: 0 auto;
 }
-/* line 103, less\5_components.less */
+/* line 104, less\5_components.less */
 .circle-info.brand-primary {
   background-color: #703081;
 }
-/* line 107, less\5_components.less */
+/* line 108, less\5_components.less */
 .circle-info.brand-secondary {
   background-color: #da3f7b;
 }
-/* line 111, less\5_components.less */
+/* line 112, less\5_components.less */
 .circle-info.red {
   background-color: #ff1e26;
 }
-/* line 115, less\5_components.less */
+/* line 116, less\5_components.less */
 .circle-info.green {
   background-color: #18cc6b;
 }
-/* line 119, less\5_components.less */
+/* line 120, less\5_components.less */
 .circle-info.blue {
   background-color: #41a8f5;
 }
-/* line 123, less\5_components.less */
+/* line 124, less\5_components.less */
 .circle-info.yellow {
   background-color: #F0AD4E;
 }
-/* line 127, less\5_components.less */
+/* line 128, less\5_components.less */
 .circle-info.gray {
   background-color: #555555;
 }
-/* line 131, less\5_components.less */
+/* line 132, less\5_components.less */
 .circle-info.gray-light {
   background-color: #d6d6d6;
 }
-/* line 135, less\5_components.less */
+/* line 136, less\5_components.less */
 .circle-info > i {
   color: #FFF;
   position: absolute;
@@ -17943,16 +17996,16 @@ h5 + .separator {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 143, less\5_components.less */
+/* line 144, less\5_components.less */
 .circle-info.circle-md {
   height: 50px;
   width: 50px;
 }
-/* line 147, less\5_components.less */
+/* line 148, less\5_components.less */
 .circle-info.circle-md > i {
   font-size: 20px;
 }
-/* line 153, less\5_components.less */
+/* line 154, less\5_components.less */
 .box-login {
   background-color: #703081;
   -webkit-border-radius: 30px 30px 150px 150px;
@@ -17962,19 +18015,19 @@ h5 + .separator {
   filter: alpha(opacity=95);
   margin-top: 50px;
 }
-/* line 161, less\5_components.less */
+/* line 162, less\5_components.less */
 .box-login--inner {
   padding: 30px;
 }
-/* line 165, less\5_components.less */
+/* line 166, less\5_components.less */
 .box-login--head {
   margin-bottom: 30px;
 }
-/* line 168, less\5_components.less */
+/* line 169, less\5_components.less */
 .box-login .form-control {
   font-size: 18px;
 }
-/* line 171, less\5_components.less */
+/* line 172, less\5_components.less */
 .box-login .lang {
   margin-top: 30px;
 }
@@ -19410,7 +19463,7 @@ Sidebar
 }
 /* line 16, less\9_leaflet.less */
 .leaflet-container {
-  font: 14px/1.5 "stc", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 'stc', 'Dosis', Helvetica, Arial, sans-serif;
 }
 /* line 21, less\9_leaflet.less */
 .leaflet-bar > a {
@@ -19495,7 +19548,7 @@ Sidebar
 .leaflet-control-layers-overlays label {
   background-color: transparent;
   color: #703081;
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   margin-right: 4px;
 }
 @media (min-width: 992px) {
@@ -19518,7 +19571,7 @@ Sidebar
   -webkit-box-shadow: 0 2px 8px -3px #000;
   box-shadow: 0 2px 8px -3px #000;
   color: #FFF;
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 200;
   text-align: center;
@@ -19545,7 +19598,7 @@ Sidebar
   border-radius: 4px;
   color: #703081;
   font-size: 14px;
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
 }
 /* line 148, less\9_leaflet.less */
 .leaflet-container a.leaflet-popup-close-button {
@@ -19553,7 +19606,7 @@ Sidebar
 }
 /* line 152, less\9_leaflet.less */
 .leaflet-container {
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
 }
 /* line 154, less\9_leaflet.less */
 .leaflet-container a {
@@ -19592,7 +19645,7 @@ Sidebar
 }
 /* line 182, less\9_leaflet.less */
 .leaflet-container .map-tools .btn-secondary {
-  font-family: "stc", Helvetica, Arial, sans-serif;
+  font-family: 'stc', 'Dosis', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 200;
   text-align: center;

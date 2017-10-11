@@ -18,6 +18,9 @@
   border: 1px solid transparent;
   white-space: nowrap;
   .button-size((@padding-base-top * 2); @padding-base-horizontal; @padding-base-bottom; @margin-base-vertical; @font-size-base; @line-height-base; @btn-border-radius-base);
+  &.font-ar {
+    .button-size(@padding-base-top; @padding-base-horizontal; (@padding-base-bottom * 2); @margin-base-vertical; @font-size-base; @line-height-base; @btn-border-radius-base);
+    }
   .user-select(none);
 
   &,
@@ -145,13 +148,22 @@
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   .button-size((@padding-large-top * 2); @padding-large-horizontal; @padding-large-bottom; @margin-large-vertical; @font-size-large; @line-height-large; @btn-border-radius-large);
+  &.font-ar {
+    .button-size(@padding-large-top; @padding-large-horizontal; (@padding-large-bottom *2 ); @margin-large-vertical; @font-size-large; @line-height-large; @btn-border-radius-large);
+    }
   }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   .button-size((@padding-small-top * 2); @padding-small-horizontal; @padding-small-bottom; @margin-small-vertical; @font-size-base; @line-height-small; @btn-border-radius-small);
+  &.font-ar {
+    .button-size(@padding-small-top; @padding-small-horizontal; (@padding-small-bottom *2 ); @margin-small-vertical; @font-size-base; @line-height-small; @btn-border-radius-small);
+    }
   }
 .btn-xs {
   .button-size((@padding-xs-top * 2);  @padding-xs-horizontal; @padding-xs-bottom; @margin-xs-vertical; @font-size-small; @line-height-small; @btn-border-radius-small);
+  &.font-ar {
+    .button-size(@padding-xs-top;  @padding-xs-horizontal; (@padding-xs-bottom *2 ); @margin-xs-vertical; @font-size-small; @line-height-small; @btn-border-radius-small);
+    }
   }
 
 .btn-xs-link {

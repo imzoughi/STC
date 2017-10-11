@@ -18007,27 +18007,26 @@ h5 + .separator {
 }
 /* line 154, less\5_components.less */
 .box-login {
-  background-color: #703081;
+  background-color: rgba(112, 48, 129, 0.95);
   -webkit-border-radius: 30px 30px 150px 150px;
   -moz-border-radius: 30px 30px 150px 150px;
   border-radius: 30px 30px 150px 150px;
-  opacity: 0.95;
-  filter: alpha(opacity=95);
-  margin-top: 50px;
+  margin: 50px auto 0;
+  max-width: 300px;
 }
-/* line 162, less\5_components.less */
+/* line 160, less\5_components.less */
 .box-login--inner {
-  padding: 30px;
+  padding: 30px 30px 15px;
 }
-/* line 166, less\5_components.less */
+/* line 164, less\5_components.less */
 .box-login--head {
   margin-bottom: 30px;
 }
-/* line 169, less\5_components.less */
+/* line 167, less\5_components.less */
 .box-login .form-control {
   font-size: 18px;
 }
-/* line 172, less\5_components.less */
+/* line 170, less\5_components.less */
 .box-login .lang {
   margin-top: 30px;
 }

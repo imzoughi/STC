@@ -1,5 +1,5 @@
 $(function() {
-    picturefill(), bootstrapModule.init(), mainNav.init(), matchHeight.init();
+    bootstrapModule.init(), mainNav.init(), matchHeight.init();
 });
 
 var bootstrapModule = function() {

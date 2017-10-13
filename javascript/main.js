@@ -10,7 +10,6 @@
  *  INIT
  \* ========================================== */
 $(function () {
-    picturefill();
     bootstrapModule.init();
     mainNav.init();
     matchHeight.init();

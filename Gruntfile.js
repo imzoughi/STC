@@ -57,10 +57,7 @@ module.exports = function (grunt) {
                         'bower_components/bootstrap/dist/js/bootstrap.js',
                         'javascript/plugins/modernizr.js',
                         'javascript/plugins/jquery.menu-aim.js',
-                        'javascript/plugins/picturefill.min.js',
                         'javascript/plugins/jquery.matchHeight-min.js',
-                        'javascript/plugins/slick.min.js',
-                        'javascript/plugins/owl.carousel.min.js',
                         
                     ],
 
@@ -78,11 +75,7 @@ module.exports = function (grunt) {
                         'bower_components/bootstrap/dist/js/bootstrap.js',
                         'javascript/plugins/modernizr.js',
                         'javascript/plugins/jquery.menu-aim.js',
-                        'javascript/plugins/picturefill.min.js',
                         'javascript/plugins/jquery.matchHeight-min.js',
-                        'javascript/plugins/slick.min.js',
-                        'javascript/plugins/owl.carousel.min.js',
-                        
                     ],
                     'dist/javascript/main.js': ['javascript/*.js'],
                 },

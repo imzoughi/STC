@@ -4149,20 +4149,20 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary {
   color: #FFF;
   background-color: #703081;
-  border-color: #6a2d7a;
+  border-color: #662c76;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:focus,
 .btn-primary.focus {
   color: #FFF;
   background-color: #50225c;
-  border-color: #190b1d;
+  border-color: #160919;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:hover {
   color: #FFF;
   background-color: #50225c;
-  border-color: #431d4d;
+  border-color: #401b49;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:active,
@@ -4170,7 +4170,7 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-primary {
   color: #FFF;
   background-color: #50225c;
-  border-color: #431d4d;
+  border-color: #401b49;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:active:hover,
@@ -4184,7 +4184,7 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #FFF;
   background-color: #391842;
-  border-color: #190b1d;
+  border-color: #160919;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:active,
@@ -4203,7 +4203,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
   background-color: #703081;
-  border-color: #6a2d7a;
+  border-color: #662c76;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary .badge {
@@ -4214,20 +4214,20 @@ fieldset[disabled] .btn-primary.focus {
 .btn-success {
   color: #FFF;
   background-color: #18cc6b;
-  border-color: #15b55f;
+  border-color: #16be64;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:focus,
 .btn-success.focus {
   color: #FFF;
   background-color: #139e53;
-  border-color: #084323;
+  border-color: #094c28;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:hover {
   color: #FFF;
   background-color: #139e53;
-  border-color: #0f7e42;
+  border-color: #108847;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:active,
@@ -4235,7 +4235,7 @@ fieldset[disabled] .btn-primary.focus {
 .open > .dropdown-toggle.btn-success {
   color: #FFF;
   background-color: #139e53;
-  border-color: #0f7e42;
+  border-color: #108847;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:active:hover,
@@ -4249,7 +4249,7 @@ fieldset[disabled] .btn-primary.focus {
 .open > .dropdown-toggle.btn-success.focus {
   color: #FFF;
   background-color: #0f7e42;
-  border-color: #084323;
+  border-color: #094c28;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:active,
@@ -4268,7 +4268,7 @@ fieldset[disabled] .btn-success:focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
   background-color: #18cc6b;
-  border-color: #15b55f;
+  border-color: #16be64;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success .badge {
@@ -4279,20 +4279,20 @@ fieldset[disabled] .btn-success.focus {
 .btn-info {
   color: #FFF;
   background-color: #41a8f5;
-  border-color: #299df4;
+  border-color: #32a1f4;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:focus,
 .btn-info.focus {
   color: #FFF;
   background-color: #1192f2;
-  border-color: #085995;
+  border-color: #085e9f;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:hover {
   color: #FFF;
   background-color: #1192f2;
-  border-color: #0b7ed4;
+  border-color: #0c84de;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:active,
@@ -4300,7 +4300,7 @@ fieldset[disabled] .btn-success.focus {
 .open > .dropdown-toggle.btn-info {
   color: #FFF;
   background-color: #1192f2;
-  border-color: #0b7ed4;
+  border-color: #0c84de;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:active:hover,
@@ -4314,7 +4314,7 @@ fieldset[disabled] .btn-success.focus {
 .open > .dropdown-toggle.btn-info.focus {
   color: #FFF;
   background-color: #0b7ed4;
-  border-color: #085995;
+  border-color: #085e9f;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:active,
@@ -4333,7 +4333,7 @@ fieldset[disabled] .btn-info:focus,
 .btn-info[disabled].focus,
 fieldset[disabled] .btn-info.focus {
   background-color: #41a8f5;
-  border-color: #299df4;
+  border-color: #32a1f4;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info .badge {
@@ -4344,20 +4344,20 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning {
   color: #FFF;
   background-color: #F0AD4E;
-  border-color: #eea236;
+  border-color: #efa640;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:focus,
 .btn-warning.focus {
   color: #FFF;
   background-color: #ec971f;
-  border-color: #985f0d;
+  border-color: #a2640e;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:hover {
   color: #FFF;
   background-color: #ec971f;
-  border-color: #d58512;
+  border-color: #df8a13;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:active,
@@ -4365,7 +4365,7 @@ fieldset[disabled] .btn-info.focus {
 .open > .dropdown-toggle.btn-warning {
   color: #FFF;
   background-color: #ec971f;
-  border-color: #d58512;
+  border-color: #df8a13;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:active:hover,
@@ -4379,7 +4379,7 @@ fieldset[disabled] .btn-info.focus {
 .open > .dropdown-toggle.btn-warning.focus {
   color: #FFF;
   background-color: #d58512;
-  border-color: #985f0d;
+  border-color: #a2640e;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:active,
@@ -4398,7 +4398,7 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning.focus {
   background-color: #F0AD4E;
-  border-color: #eea236;
+  border-color: #efa640;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning .badge {
@@ -4409,20 +4409,20 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger {
   color: #FFF;
   background-color: #ff1e26;
-  border-color: #ff040d;
+  border-color: #ff0f17;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:focus,
 .btn-danger.focus {
   color: #FFF;
   background-color: #ea0008;
-  border-color: #840005;
+  border-color: #8e0005;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:hover {
   color: #FFF;
   background-color: #ea0008;
-  border-color: #c60007;
+  border-color: #d10007;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:active,
@@ -4430,7 +4430,7 @@ fieldset[disabled] .btn-warning.focus {
 .open > .dropdown-toggle.btn-danger {
   color: #FFF;
   background-color: #ea0008;
-  border-color: #c60007;
+  border-color: #d10007;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:active:hover,
@@ -4444,7 +4444,7 @@ fieldset[disabled] .btn-warning.focus {
 .open > .dropdown-toggle.btn-danger.focus {
   color: #FFF;
   background-color: #c60007;
-  border-color: #840005;
+  border-color: #8e0005;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:active,
@@ -4463,7 +4463,7 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger.focus {
   background-color: #ff1e26;
-  border-color: #ff040d;
+  border-color: #ff0f17;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger .badge {
@@ -15740,20 +15740,20 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary {
   color: #FFF;
   background-color: #703081;
-  border-color: #6a2d7a;
+  border-color: #662c76;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:focus,
 .btn-primary.focus {
   color: #FFF;
   background-color: #50225c;
-  border-color: #190b1d;
+  border-color: #160919;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:hover {
   color: #FFF;
   background-color: #50225c;
-  border-color: #431d4d;
+  border-color: #401b49;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:active,
@@ -15761,7 +15761,7 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-primary {
   color: #FFF;
   background-color: #50225c;
-  border-color: #431d4d;
+  border-color: #401b49;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:active:hover,
@@ -15775,7 +15775,7 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #FFF;
   background-color: #391842;
-  border-color: #190b1d;
+  border-color: #160919;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary:active,
@@ -15794,7 +15794,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
   background-color: #703081;
-  border-color: #6a2d7a;
+  border-color: #662c76;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-primary .badge {
@@ -15873,26 +15873,26 @@ fieldset[disabled] .btn-secondary.focus {
 .btn-secondary:focus {
   background-color: #703081;
   color: #FFF;
-  border-color: #60296e;
+  border-color: #662c76;
 }
 /* line 87, less\buttons.less */
 .btn-success {
   color: #FFF;
   background-color: #18cc6b;
-  border-color: #15b55f;
+  border-color: #16be64;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:focus,
 .btn-success.focus {
   color: #FFF;
   background-color: #139e53;
-  border-color: #084323;
+  border-color: #094c28;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:hover {
   color: #FFF;
   background-color: #139e53;
-  border-color: #0f7e42;
+  border-color: #108847;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:active,
@@ -15900,7 +15900,7 @@ fieldset[disabled] .btn-secondary.focus {
 .open > .dropdown-toggle.btn-success {
   color: #FFF;
   background-color: #139e53;
-  border-color: #0f7e42;
+  border-color: #108847;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:active:hover,
@@ -15914,7 +15914,7 @@ fieldset[disabled] .btn-secondary.focus {
 .open > .dropdown-toggle.btn-success.focus {
   color: #FFF;
   background-color: #0f7e42;
-  border-color: #084323;
+  border-color: #094c28;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success:active,
@@ -15933,7 +15933,7 @@ fieldset[disabled] .btn-success:focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
   background-color: #18cc6b;
-  border-color: #15b55f;
+  border-color: #16be64;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-success .badge {
@@ -15944,20 +15944,20 @@ fieldset[disabled] .btn-success.focus {
 .btn-info {
   color: #FFF;
   background-color: #41a8f5;
-  border-color: #299df4;
+  border-color: #32a1f4;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:focus,
 .btn-info.focus {
   color: #FFF;
   background-color: #1192f2;
-  border-color: #085995;
+  border-color: #085e9f;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:hover {
   color: #FFF;
   background-color: #1192f2;
-  border-color: #0b7ed4;
+  border-color: #0c84de;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:active,
@@ -15965,7 +15965,7 @@ fieldset[disabled] .btn-success.focus {
 .open > .dropdown-toggle.btn-info {
   color: #FFF;
   background-color: #1192f2;
-  border-color: #0b7ed4;
+  border-color: #0c84de;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:active:hover,
@@ -15979,7 +15979,7 @@ fieldset[disabled] .btn-success.focus {
 .open > .dropdown-toggle.btn-info.focus {
   color: #FFF;
   background-color: #0b7ed4;
-  border-color: #085995;
+  border-color: #085e9f;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info:active,
@@ -15998,7 +15998,7 @@ fieldset[disabled] .btn-info:focus,
 .btn-info[disabled].focus,
 fieldset[disabled] .btn-info.focus {
   background-color: #41a8f5;
-  border-color: #299df4;
+  border-color: #32a1f4;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-info .badge {
@@ -16009,20 +16009,20 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning {
   color: #FFF;
   background-color: #F0AD4E;
-  border-color: #eea236;
+  border-color: #efa640;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:focus,
 .btn-warning.focus {
   color: #FFF;
   background-color: #ec971f;
-  border-color: #985f0d;
+  border-color: #a2640e;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:hover {
   color: #FFF;
   background-color: #ec971f;
-  border-color: #d58512;
+  border-color: #df8a13;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:active,
@@ -16030,7 +16030,7 @@ fieldset[disabled] .btn-info.focus {
 .open > .dropdown-toggle.btn-warning {
   color: #FFF;
   background-color: #ec971f;
-  border-color: #d58512;
+  border-color: #df8a13;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:active:hover,
@@ -16044,7 +16044,7 @@ fieldset[disabled] .btn-info.focus {
 .open > .dropdown-toggle.btn-warning.focus {
   color: #FFF;
   background-color: #d58512;
-  border-color: #985f0d;
+  border-color: #a2640e;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning:active,
@@ -16063,7 +16063,7 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning[disabled].focus,
 fieldset[disabled] .btn-warning.focus {
   background-color: #F0AD4E;
-  border-color: #eea236;
+  border-color: #efa640;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-warning .badge {
@@ -16074,20 +16074,20 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger {
   color: #FFF;
   background-color: #ff1e26;
-  border-color: #ff040d;
+  border-color: #ff0f17;
 }
 /* line 11, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:focus,
 .btn-danger.focus {
   color: #FFF;
   background-color: #ea0008;
-  border-color: #840005;
+  border-color: #8e0005;
 }
 /* line 17, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:hover {
   color: #FFF;
   background-color: #ea0008;
-  border-color: #c60007;
+  border-color: #d10007;
 }
 /* line 22, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:active,
@@ -16095,7 +16095,7 @@ fieldset[disabled] .btn-warning.focus {
 .open > .dropdown-toggle.btn-danger {
   color: #FFF;
   background-color: #ea0008;
-  border-color: #c60007;
+  border-color: #d10007;
 }
 /* line 29, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:active:hover,
@@ -16109,7 +16109,7 @@ fieldset[disabled] .btn-warning.focus {
 .open > .dropdown-toggle.btn-danger.focus {
   color: #FFF;
   background-color: #c60007;
-  border-color: #840005;
+  border-color: #8e0005;
 }
 /* line 37, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger:active,
@@ -16128,7 +16128,7 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger.focus {
   background-color: #ff1e26;
-  border-color: #ff040d;
+  border-color: #ff0f17;
 }
 /* line 53, bower_components\bootstrap\less\mixins\buttons.less */
 .btn-danger .badge {
@@ -19165,285 +19165,6 @@ Sidebar
     color: #FFF;
     padding-left: 18px !important;
   }
-}
-/* Slider */
-/* line 3, less\slick-slider\slick.less */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-/* line 17, less\slick-slider\slick.less */
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-/* line 24, less\slick-slider\slick.less */
-.slick-list:focus {
-  outline: none;
-}
-/* line 28, less\slick-slider\slick.less */
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-/* line 33, less\slick-slider\slick.less */
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-/* line 42, less\slick-slider\slick.less */
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: block;
-}
-/* line 48, less\slick-slider\slick.less */
-.slick-track:before,
-.slick-track:after {
-  content: "";
-  display: table;
-}
-/* line 54, less\slick-slider\slick.less */
-.slick-track:after {
-  clear: both;
-}
-/* line 58, less\slick-slider\slick.less */
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-/* line 62, less\slick-slider\slick.less */
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none;
-}
-/* line 66, less\slick-slider\slick.less */
-[dir="rtl"] .slick-slide {
-  float: right;
-}
-/* line 69, less\slick-slider\slick.less */
-.slick-slide img {
-  display: block;
-}
-/* line 72, less\slick-slider\slick.less */
-.slick-slide.slick-loading img {
-  display: none;
-}
-/* line 78, less\slick-slider\slick.less */
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-/* line 82, less\slick-slider\slick.less */
-.slick-initialized .slick-slide {
-  display: block;
-}
-/* line 86, less\slick-slider\slick.less */
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-/* line 90, less\slick-slider\slick.less */
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-/* line 96, less\slick-slider\slick.less */
-.slick-arrow.slick-hidden {
-  display: none;
-}
-/* line 1, less\slick-slider\slick-theme.less */
-/* @charset "UTF-8"; */
-
-/* Slider */
-/* line 20, less\slick-slider\slick-theme.less */
-.slick-loading .slick-list {
-  background: #fff url('../images/loader.gif') center center no-repeat;
-}
-/* Icons */
-@font-face {
-  font-family: 'slick';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/slick.eot');
-  src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
-}
-/* Arrows */
-/* line 36, less\slick-slider\slick-theme.less */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0px;
-  font-size: 0px;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  padding: 0;
-  border: none;
-  outline: none;
-}
-/* line 54, less\slick-slider\slick-theme.less */
-.slick-prev:hover,
-.slick-next:hover,
-.slick-prev:focus,
-.slick-next:focus {
-  outline: none;
-  background: transparent;
-  color: transparent;
-}
-/* line 58, less\slick-slider\slick-theme.less */
-.slick-prev:hover:before,
-.slick-next:hover:before,
-.slick-prev:focus:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-/* line 62, less\slick-slider\slick-theme.less */
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 0.25;
-}
-/* line 67, less\slick-slider\slick-theme.less */
-.slick-prev:before,
-.slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  color: white;
-  opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 77, less\slick-slider\slick-theme.less */
-.slick-prev {
-  left: -25px;
-}
-/* line 79, less\slick-slider\slick-theme.less */
-.slick-prev[dir="rtl"] {
-  left: auto;
-  right: -25px;
-}
-/* line 83, less\slick-slider\slick-theme.less */
-.slick-prev:before {
-  content: "←";
-}
-/* line 85, less\slick-slider\slick-theme.less */
-.slick-prev:before[dir="rtl"] {
-  content: "→";
-}
-/* line 91, less\slick-slider\slick-theme.less */
-.slick-next {
-  right: -25px;
-}
-/* line 93, less\slick-slider\slick-theme.less */
-.slick-next[dir="rtl"] {
-  left: -25px;
-  right: auto;
-}
-/* line 97, less\slick-slider\slick-theme.less */
-.slick-next:before {
-  content: "→";
-}
-/* line 99, less\slick-slider\slick-theme.less */
-.slick-next:before[dir="rtl"] {
-  content: "←";
-}
-/* Dots */
-/* line 107, less\slick-slider\slick-theme.less */
-.slick-dotted .slick-slider {
-  margin-bottom: 30px;
-}
-/* line 111, less\slick-slider\slick-theme.less */
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-/* line 120, less\slick-slider\slick-theme.less */
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-/* line 128, less\slick-slider\slick-theme.less */
-.slick-dots li button {
-  border: 0;
-  background: transparent;
-  display: block;
-  height: 20px;
-  width: 20px;
-  outline: none;
-  line-height: 0px;
-  font-size: 0px;
-  color: transparent;
-  padding: 5px;
-  cursor: pointer;
-}
-/* line 140, less\slick-slider\slick-theme.less */
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  outline: none;
-}
-/* line 142, less\slick-slider\slick-theme.less */
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  opacity: 1;
-}
-/* line 146, less\slick-slider\slick-theme.less */
-.slick-dots li button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
-  font-family: "slick";
-  font-size: 6px;
-  line-height: 20px;
-  text-align: center;
-  color: black;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 163, less\slick-slider\slick-theme.less */
-.slick-dots li.slick-active button:before {
-  color: black;
-  opacity: 0.75;
 }
 /* line 1, less\9_leaflet.less */
 .map-container {

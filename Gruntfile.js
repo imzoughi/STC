@@ -36,7 +36,7 @@ module.exports = function (grunt) {
                     paths: ["less/**/*.less"],
                     optimization: 2,
                     sourceMap: true,
-                    dumpLineNumbers: 'comments'
+                    dumpLineNumbers: false
                 },
                 files: {
                     'dist/stylesheets/main.css': 'less/main.less',
@@ -86,8 +86,28 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, src: ['images/**'], dest: 'dist', filter: 'isFile'},
-                    {expand: true, src: ['fonts/**'], dest: 'dist', filter: 'isFile'}
+                    {
+                        expand: true,
+                        src: [
+                            'bower_components/bootstrap/dist/css/bootstrap.min.css',
+                            'bower_components/bootstrap/dist/css/bootstrap-theme.min.css'
+                        ],
+                        dest: 'dist/stylesheets/bootstrap/',
+                        flatten: true,
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['images/**'],
+                        dest: 'dist',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['fonts/**'],
+                        dest: 'dist',
+                        filter: 'isFile'
+                    }
                 ],
             },
         },

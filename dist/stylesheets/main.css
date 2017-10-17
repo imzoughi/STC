@@ -7444,6 +7444,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   font-weight: 200;
   text-align: center;
+  text-shadow: none !important;
   vertical-align: middle;
   touch-action: manipulation;
   cursor: pointer;
